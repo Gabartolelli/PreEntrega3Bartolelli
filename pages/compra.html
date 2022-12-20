@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../asset/css/style.css">
+    <title>Compra</title>
+</head>
+<body>
+    <nav>
+        <div class="navegador">
+            <a href="../index.html"><img class="logo" src="../asset/img/tools.png" alt="logo"></a>
+            <ul>
+                    <li>construccion</li>
+                    <li>pinturas</li>
+                    <li>electricidad</li>
+                    <li>herramientas</li>
+                    <li>sanitarios</li>
+             </ul>
+             <form action="">
+                <input class="buscador" type="search" name="buscador" placeholder="buscar">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <a href="./contacto.html"><img class="imgContacto" src="../asset/img/envelope.png" alt="contacto"></a>
+        </div>
+    </nav>
+        <div class="datosComprador">
+                 <form class="formularioCompra" action="formularioCompra" method="post">
+                    <div>
+            
+                    <h2>DATOS DEL COMPRADOR</h2>
+                    <br>
+                    <br>
+                    <input class="nombre" type="text" name="nombre" placeholder="nombre" required>
+                    <br>
+                    <br>
+                    <input class="apellido" type="text" name="apellido" placeholder="apellido" required>
+                    <br>
+                    <br>
+                    <input type="text"  name="domicilio" placeholder="domicilio"><input type="number" name="altura" placeholder="altura">
+                    <br>
+                    <br>        
+                    <input type="text" name="provincia" placeholder="provincia">
+                    <br>
+                    <br>
+                    <input type="text" name="localidad" placeholder="localidad">
+                    <br>
+                    <br>
+                    </div>
+                </form>
+                <div class="imagenCompra">
+                    <img src="../asset/img/kit de herramientas.jpg" alt=""><H2>$20.000</H2>
+                    <p>Kit juego llave de tubo 108 exelente calidad</p>
+                </div>
+         </div>
+         <br>
+         <div class="mediosPagos">
+            <h2>MEDIOS DE PAGOS</h2>
+            <form class="pagos" action="">
+                <br>
+                <br>
+                <input type="checkbox" name="efectivo"> Efectvo 
+                <br>
+                <br>
+                <input type="checkbox" name="tarjeta"> Tarjeta credito/debito
+                <br>
+                <br>
+                <input type="number" name="numeroTarjeta" placeholder="ingrese numero tarjeta">
+                <br>
+                <br>
+                <input type="text" name="titual" placeholder="titular de la tarjeta">
+                <br>
+                <br>
+                <input type="date" name="fecha"> fecha vencimiento
+                <br>
+                <br>
+                <input type="text" name="seguridad" placeholder="numero de seguridad">
+                <br>
+                <br>
+                <input type="number" name="cuotas" placeholder="cuotas">
+            </form>
+            <br>
+            <br>
+            <br>
+            <h2>METODOS DE ENVIO</h2>
+            <form class="envios" action="">
+                <br>
+                <br>
+                <input type="checkbox" name="sucursal"> Envio a Sucursal
+                <br>
+                <br>
+                <input type="checkbox" name="domicilio"> Envio a domicilio
+                <br>
+                <br>
+                
+                <button class="comprar">COMPRAR</button>
+            </form>
+    </div>
+    <br>
+    <br>
+    <br>
+    <footer class="pie">
+        <img class="face" src="../asset/img/facebook.png" alt="iconofacebook" width="30">
+        <img class="instagram" src="../asset/img/instagram.png" alt="iconoinstagram" width="30">
+        <img class="wsp"  src="../asset/img/whatsapp.png" alt="iconowsp" width="40">            
+        <p class="seguinos">Seguinos en nuestras redes sociales</p>
+        <a class="preg" href="./preguntas-frecuentes.html">Preguntas-Frecuentes</a>
+    </footer>
+</body>
+</html>
