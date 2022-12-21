@@ -580,10 +580,12 @@ a button{
     }
 }
 @media(max-width:400px){
+    
     .navegador{
         display: flex;
         justify-content: space-around;
     }
+    
     .publicidad{
         font-size: 20px;
         margin-top: 250px;
@@ -610,11 +612,11 @@ a button{
         overflow: hidden;
         background-color: khaki ;
         padding: 20px;
-        margin: 20px;
+        margin: 10px;
         margin-bottom: 40px; 
     }
     .producto3{
-        height: 50%;
+        height: 60%;
     }
     .card2{
         width: 250px;
@@ -624,11 +626,11 @@ a button{
         overflow: hidden;
         background-color: khaki ;
         padding: 20px;
-        margin: 20px;
+        margin: 10px;
         margin-bottom: 40px;
     }
     .producto2{
-        height: 50%;
+        height: 60%;
     }
     .card{
         width: 250px;
@@ -638,17 +640,26 @@ a button{
         overflow: hidden;
         background-color: khaki ;
         padding: 20px;
-        margin: 20px;
+        margin: 10px;
        
     }
     .producto1{
-        height: 50%;
+        height: 60%;
+        margin-bottom: 15px;
     }
     .descripcion{
-        font-size: 24px;
+        font-size: 18px;
+        
     }  
     .descripcion1{
-        font-size: 24px;
+        font-size: 18px;
+        
+    }
+    .pie{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
     }
     
 }
