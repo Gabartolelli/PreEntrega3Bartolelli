@@ -191,7 +191,7 @@ footer{
     background-color: grey;
     margin-bottom: 0%;
     justify-content: space-around;
-    max-height: 300px;
+    height: 100px;
     
 }
 .footerPreguntas{
@@ -539,7 +539,7 @@ a button{
         margin-top: 30%;
     }
 }
-@media(max-width:707px){
+@media(max-width:759px){
     .publicidad{
         font-size: 30px;
     }
@@ -595,6 +595,7 @@ a button{
     .pie{
         flex-direction: column;
         align-items: center;
+        height: 200px;
     }
     .pie > div{
         display: flex;
@@ -625,10 +626,9 @@ a button{
     }
     .pie{
         height: auto;
+        margin-bottom: 0;
+        height: 200px;
     }
-}
-@media(max-width:400px){
-    
     .navegador{
         display: flex;
         justify-content: space-around;
@@ -680,6 +680,7 @@ a button{
     }
     .producto2{
         height: 60%;
+        margin-bottom: 5px;
     }
     .card{
         width: 175px;
@@ -690,12 +691,12 @@ a button{
         background-color: khaki ;
         padding: 10px;
         margin: 10px;
-        margin-bottom: 40px; 
+         
        
     }
     .producto1{
         height: 60%;
-        margin-bottom: 15px;
+        margin-bottom: 5px;
     }
     .descripcion{
         font-size: 12px;
@@ -718,10 +719,15 @@ a button{
         height: 50%;
         margin-bottom: 10px;
     }
-
-
-
 }
+@media(max-width:343px){
+    .publicidad{
+        font-size: 18px;
+    }
+}
+
+
+
 /*compra*/
 .datosComprador{
     display:flex;
