@@ -181,6 +181,7 @@ body{
 footer{
     display: grid;
     grid-area: footer;
+    
   
 }
 .pie{
@@ -190,13 +191,11 @@ footer{
     background-color: grey;
     margin-bottom: 0%;
     justify-content: space-around;
-    overflow: hidden;
     max-height: 300px;
+    
 }
 .footerPreguntas{
     background-color: grey;
-   
-    
 }
 .pie img{
     padding: 20px;
@@ -229,10 +228,10 @@ header{
     height: 500px;
 }
 .encabezado{
-   background-image: url(../img/variety-handy-tools-on-dark-background-labor-day-background-concept.jpg);
-   width: 100%;
+    background-image: url(../img/variety-handy-tools-on-dark-background-labor-day-background-concept.jpg);
+    width: 100%;
     height: 100%;
-   background-size: cover;
+    background-size: cover;
 }
 .publicidad{
     display: flex;
@@ -344,6 +343,7 @@ a button{
 .cards{
     display: flex;
     justify-content: space-around;
+    width: 100%;
 }
 .cards .boton:hover{
     transform: scale(1.1,1.1);
@@ -363,6 +363,7 @@ a button{
     display: flex;
     justify-content: space-around;
     margin-bottom: 150px;
+    width:100%
 }
 .masVendido1{
     width: 250px;
@@ -431,7 +432,7 @@ a button{
     height: 70%;
     border: solid 1p
 }
-@media(max-width:1200px){
+@media(max-width:1260px){
     .publicidad{
         font-size: 40px;
         margin-top: 250px;
@@ -443,35 +444,7 @@ a button{
         margin-top:10px;
     }
 }
-@media( max-width:939px){
-    .navegador > ul {
-        position: fixed;
-        display: flex;
-        flex-direction: column;
-        width: 250px;
-        height: 100vh;
-        top: 0;
-        left: -350px;
-        background-color:darkslategrey;
-        z-index: 100;
-        transition: 0.5s;
-    }
-    .navegador > .fa-bars {
-        display: block;
-        font-size: 40px;
-    }
-    .navegador > ul > li {
-        margin: 20px 0px;
-    }
-    .navegador > ul > li:nth-child(1){
-        margin-top: 100px;
-    }
-    .navegador > .fa-bars:hover + ul{
-        left: 0;
-    }
-    .navegador > ul:hover{
-        left: 0;
-    }
+@media(max-width:1087px){
     .publicidad{
         font-size: 45px;
         margin-top: 200px;
@@ -527,6 +500,37 @@ a button{
         margin-bottom: 40px;
     }
 }
+@media( max-width:939px){
+    .navegador > ul {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        height: 100vh;
+        top: 0;
+        left: -350px;
+        background-color:darkslategrey;
+        z-index: 100;
+        transition: 0.5s;
+    }
+    .navegador > .fa-bars {
+        display: block;
+        font-size: 40px;
+    }
+    .navegador > ul > li {
+        margin: 20px 0px;
+    }
+    .navegador > ul > li:nth-child(1){
+        margin-top: 100px;
+    }
+    .navegador > .fa-bars:hover + ul{
+        left: 0;
+    }
+    .navegador > ul:hover{
+        left: 0;
+    }
+    
+}
 @media(max-width:800px){
     .publicidad{
         font-size: 40px;
@@ -535,7 +539,10 @@ a button{
         margin-top: 30%;
     }
 }
-@media(max-width:680px){
+@media(max-width:707px){
+    .publicidad{
+        font-size: 30px;
+    }
     
    
     .card{
@@ -585,9 +592,17 @@ a button{
     .pie > .seguinos{
         font-size: 18px;
     }
+    .pie{
+        flex-direction: column;
+        align-items: center;
+    }
+    .pie > div{
+        display: flex;
+        justify-content: center;
+    }
 }
 
-@media(max-width:560px){
+@media(max-width:550px){
    
     .navbar > .navegador > .fa-bars{
         display: block;
@@ -604,6 +619,12 @@ a button{
         width: 250px;
         height: 100vh;
         background-color:darkslategrey ;
+    }
+    .publicidad{
+        font-size: 25px;
+    }
+    .pie{
+        height: auto;
     }
 }
 @media(max-width:400px){
@@ -622,7 +643,7 @@ a button{
     .ofertas{
         display: flex;
         text-align: center;
-        font-size: 40px;
+        font-size: 25px;
         margin-left: 20px;
     }
     .cards{
@@ -632,42 +653,44 @@ a button{
 
     }
     .card3{
-        width: 250px;
-        height: 300px;
+        width: 175px;
+        height: 225px;
         border-radius:10px;
         border: solid 2px;
         overflow: hidden;
         background-color: khaki ;
-        padding: 20px;
+        padding: 10px;
         margin: 10px;
         margin-bottom: 40px; 
     }
     .producto3{
         height: 60%;
+        margin-bottom: 10px;
     }
     .card2{
-        width: 250px;
-        height: 300px;
+        width: 175px;
+        height: 225px;
         border-radius:10px;
         border: solid 2px;
         overflow: hidden;
         background-color: khaki ;
-        padding: 20px;
+        padding: 10px;
         margin: 10px;
-        margin-bottom: 40px;
+        margin-bottom: 40px; 
     }
     .producto2{
         height: 60%;
     }
     .card{
-        width: 250px;
-        height: 300px;
+        width: 175px;
+        height: 225px;
         border-radius:10px;
         border: solid 2px;
         overflow: hidden;
         background-color: khaki ;
-        padding: 20px;
+        padding: 10px;
         margin: 10px;
+        margin-bottom: 40px; 
        
     }
     .producto1{
@@ -675,24 +698,30 @@ a button{
         margin-bottom: 15px;
     }
     .descripcion{
-        font-size: 18px;
+        font-size: 12px;
         
     }  
     .descripcion1{
-        font-size: 18px;
+        font-size: 12px;
         
     }
-    .pie{
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: row;
+    .masVendido1 , .masVendido2 , .masVendido3 , .masVendido4{
+        width: 175px;
+        height: 225px;
+        border-radius: 10px;
+        border: solid 2px;
+        margin: 20px;
+        padding: 10px;
+        background-color: khaki;
     }
-    
+    .masVendido > div > img{
+        height: 50%;
+        margin-bottom: 10px;
+    }
+
+
+
 }
-
-
-
 /*compra*/
 .datosComprador{
     display:flex;
@@ -894,7 +923,6 @@ a button{
 
     
     
-
 
 
 
