@@ -11,7 +11,7 @@ body{
 .bodyBootstrap{
     background-color: rgba(206, 218, 42, 0.719);
     width: 100%;
-    overflow-x: hidden;
+    margin: 0%;
     
 }
 .bodyIndex{
@@ -137,8 +137,12 @@ body{
     border-radius: 20px;
     margin-right: 0;
     padding-right: 0;
-       
-       
+    margin-bottom: 500px;
+}
+@media(max-width:1207px){
+    .formularioContacto{
+        margin-bottom: 30px;
+    }
 }
 .nombre{
     border: solid 1px;
@@ -176,10 +180,11 @@ body{
 }
 
 
+
 footer{
     display: grid;
     grid-area: footer;
-    
+    margin-bottom: 0%
   
 }
 .pie{
@@ -194,6 +199,7 @@ footer{
 }
 .footerPreguntas{
     background-color: grey;
+    margin-bottom: 0%;
 }
 .pie img{
     padding: 20px;
@@ -215,6 +221,11 @@ footer{
     text-decoration: none;
     color: black;
     width: 400px;
+}
+@media(max-width:433px){
+    .encontranos > .mapa{
+        width: 90%;
+    }
 }
 
 /* inicio*/
@@ -590,9 +601,12 @@ a button{
     .pie > .seguinos{
         font-size: 18px;
     }
+   
     .pie{
+        display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         height: 200px;
         margin-bottom: 0%;
     }
@@ -601,6 +615,9 @@ a button{
         justify-content: center;
     }
 }
+    .pie > .preg{
+        margin-left: 0px;
+    }
 
 @media(max-width:550px){
    
@@ -622,6 +639,10 @@ a button{
     }
     .publicidad{
         font-size: 25px;
+    }
+    .ofertas{
+        display: flex;
+        justify-content: center;
     }
     .pie{
         height: auto;
@@ -719,11 +740,12 @@ a button{
         margin-bottom: 10px;
     }
 }
-@media(max-width:343px){
+@media(max-width:368px){
     .publicidad{
         font-size: 18px;
     }
 }
+
 
 
 
@@ -1028,6 +1050,9 @@ a button{
     margin: 20px;
     padding: 5px;
     list-style: none;
+}
+.cuerpo{
+    margin-bottom: 200px;
 }
  .preguntasFrecuentes ul p{
     padding: 10px;
