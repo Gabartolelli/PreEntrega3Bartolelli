@@ -8,105 +8,73 @@
     <link rel="stylesheet" href="../asset/css/style.css">
     <title>Compra</title>
 </head>
-<body>
-    <nav>
+<body class="bodyCompra">
+    <nav class="navegadorBar">
         <div class="navegador">
             <a href="../index.html"><img class="logo" src="../asset/img/tools.png" alt="logo"></a>
+            <i class="fa-solid fa-bars"></i>
             <ul>
-                    <li>construccion</li>
-                    <li>pinturas</li>
-                    <li>electricidad</li>
-                    <li>herramientas</li>
-                    <li>sanitarios</li>
+                <li>construccion</li>
+                <li>pinturas</li>
+                <li>electricidad</li>
+                <li>herramientas</li>
+                <li>sanitarios</li>
              </ul>
-             <form action="">
-                <input class="buscador" type="search" name="buscador" placeholder="buscar">
-                <button><i class="fa-solid fa-magnifying-glass"></i></button>
-            </form>
-            <a href="./contacto.html"><img class="imgContacto" src="../asset/img/envelope.png" alt="contacto"></a>
+             <div>
+                <form action="">
+                    <input class="buscador" type="search" name="buscador" placeholder="buscar">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <a href="../pages/contacto.html"><img class="imgContacto" src="../asset/img/envelope.png" alt="contacto"></a>
+            </div>
         </div>
     </nav>
+    <main>
         <div class="datosComprador">
-                 <form class="formularioCompra" action="formularioCompra" method="post">
-                    <div>
-            
-                    <h2>DATOS DEL COMPRADOR</h2>
-                    <br>
-                    <br>
-                    <input class="nombre" type="text" name="nombre" placeholder="nombre" required>
-                    <br>
-                    <br>
-                    <input class="apellido" type="text" name="apellido" placeholder="apellido" required>
-                    <br>
-                    <br>
-                    <input type="text"  name="domicilio" placeholder="domicilio"><input type="number" name="altura" placeholder="altura">
-                    <br>
-                    <br>        
-                    <input type="text" name="provincia" placeholder="provincia">
-                    <br>
-                    <br>
-                    <input type="text" name="localidad" placeholder="localidad">
-                    <br>
-                    <br>
+                <form action="formularioCompra" method="post">
+                    <div class="formularioCompra" >
+                        <h2>DATOS DEL COMPRADOR</h2>
+                        <input class="nombre" type="text" name="nombre" placeholder="nombre" required>
+                        <input class="apellido" type="text" name="apellido" placeholder="apellido" required>
+                        <input type="text"  name="domicilio" placeholder="domicilio"><input type="number" name="altura" placeholder="altura">
+                        <input type="text" name="provincia" placeholder="provincia">
+                        <input type="text" name="localidad" placeholder="localidad">
                     </div>
                 </form>
                 <div class="imagenCompra">
                     <img src="../asset/img/kit de herramientas.jpg" alt=""><H2>$20.000</H2>
                     <p>Kit juego llave de tubo 108 exelente calidad</p>
                 </div>
-         </div>
-         <br>
-         <div class="mediosPagos">
-            <h2>MEDIOS DE PAGOS</h2>
-            <form class="pagos" action="">
-                <br>
-                <br>
-                <input type="checkbox" name="efectivo"> Efectvo 
-                <br>
-                <br>
-                <input type="checkbox" name="tarjeta"> Tarjeta credito/debito
-                <br>
-                <br>
-                <input type="number" name="numeroTarjeta" placeholder="ingrese numero tarjeta">
-                <br>
-                <br>
-                <input type="text" name="titual" placeholder="titular de la tarjeta">
-                <br>
-                <br>
-                <input type="date" name="fecha"> fecha vencimiento
-                <br>
-                <br>
-                <input type="text" name="seguridad" placeholder="numero de seguridad">
-                <br>
-                <br>
-                <input type="number" name="cuotas" placeholder="cuotas">
-            </form>
-            <br>
-            <br>
-            <br>
-            <h2>METODOS DE ENVIO</h2>
+        </div>
+        <div class="pagoYenvio">
+            <div class="mediosPagos">
+                <form class="pagos" action="">
+                    <h2>MEDIOS DE PAGOS</h2>
+                    <label for="">Efectvo<input type="checkbox" name="efectivo"></label>  
+                    <label for="">Tarjeta credito/debito<input type="checkbox" name="tarjeta"></label> 
+                    <input type="number" name="numeroTarjeta" placeholder="ingrese numero tarjeta">
+                    <input type="text" name="titual" placeholder="titular de la tarjeta">
+                    <label for="">fecha vencimiento<input type="date" name="fecha"></label>
+                    <input type="text" name="seguridad" placeholder="numero de seguridad">
+                    <input type="number" name="cuotas" placeholder="cuotas">
+                </form>
+            </div>
             <form class="envios" action="">
-                <br>
-                <br>
-                <input type="checkbox" name="sucursal"> Envio a Sucursal
-                <br>
-                <br>
-                <input type="checkbox" name="domicilio"> Envio a domicilio
-                <br>
-                <br>
-                
-                <button class="comprar">COMPRAR</button>
+                <h2>METODOS DE ENVIO</h2>
+                <label for="">Envio a Sucursal<input type="checkbox" name="sucursal"></label> 
+                <label for="">Envio a domicilio<input type="checkbox" name="domicilio"> </label>
             </form>
-    </div>
-    <br>
-    <br>
-    <br>
+            <button class="comprar">COMPRAR</button>
+        </div>
+    </main>
     <footer class="pie">
-        <img class="face" src="../asset/img/facebook.png" alt="iconofacebook" width="30">
-        <img class="instagram" src="../asset/img/instagram.png" alt="iconoinstagram" width="30">
-        <img class="wsp"  src="../asset/img/whatsapp.png" alt="iconowsp" width="40">            
+        <div>
+            <img class="face" src="../asset/img/facebook.png" alt="iconofacebook" width="30">
+            <img class="instagram" src="../asset/img/instagram.png" alt="iconoinstagram" width="30">
+            <img class="wsp"  src="../asset/img/whatsapp.png" alt="iconowsp" width="40">      
+        </div>      
         <p class="seguinos">Seguinos en nuestras redes sociales</p>
-        <a class="preg" href="./preguntas-frecuentes.html">Preguntas-Frecuentes</a>
+        <a class="preg" href="../Proyecto/pages/preguntas-frecuentes.html">Preguntas-Frecuentes</a>
     </footer>
 </body>
 </html>

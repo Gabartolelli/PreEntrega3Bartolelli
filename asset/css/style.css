@@ -15,7 +15,6 @@ body{
     
 }
 .bodyIndex{
- 
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: auto auto auto 50px;
@@ -24,7 +23,6 @@ body{
                           "main   main   main   main"
                           "footer footer footer footer"; 
 }
-/* -------navbar-------------*/
 
 .navegadorBar{
     grid-area: nav;
@@ -50,26 +48,26 @@ body{
 }
 
 .navegador > ul {
-        text-align: center;
-        list-style-type: none;
-        display: flex;
+    text-align: center;
+    list-style-type: none;
+    display: flex;
  }
 
 .navegador > ul > li {
-        text-align: center;
-        margin: 0 10px 0 20px;
-        color: white;
-        font-size: medium;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin: 0 10px 0 20px;
+    color: white;
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .navegador > a > .logo{
-        width: 50px;
-        height:50px;
-        padding: 5px;
-        margin: 10px;
-        justify-content: left;
-        list-style-type: none;
+    width: 50px;
+    height:50px;
+    padding: 5px;
+    margin: 10px;
+    justify-content: left;
+    list-style-type: none;
 }
 
 .navegador > div {
@@ -81,15 +79,15 @@ body{
     position: relative;
 }
  .navegador > div > form > .buscador {
-        padding: 10px;
-        margin: 30px;
-        margin-right:0;
-        width: 200px;
-        border-radius: 10px;
-        border: 1px solid;
-        border-right: 0;
-        border-bottom-right-radius: 0;
-        border-top-right-radius: 0;
+    padding: 10px;
+    margin: 30px;
+    margin-right:0;
+    width: 200px;
+    border-radius: 10px;
+    border: 1px solid;
+    border-right: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
        
 }
 .navegador > div > form > button {
@@ -106,18 +104,18 @@ body{
     right:-50px;
 }
 .navegador > div > a > .imgContacto{
-        width:50px;
-        height: 50px;
-        margin: 10px;
-        margin-left: 50px;
-        align-items: flex-end;
+    width:50px;
+    height: 50px;
+    margin: 10px;
+    margin-left: 50px;
+    align-items: flex-end;
         
         
 }
 .tituloContacto{
-        font-size: 30px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        margin: 20px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 20px;
 
 }
 .titulo{
@@ -126,43 +124,43 @@ body{
     text-align: center;
 }
 .tarjetaContacto{
-        display: flex;
-        align-items: flex-start;
-        flex-direction: row;
-        justify-content: center;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: center;
 }
 .formularioContacto{
-        margin: 20px;
-        border: solid 2px;
-        width: 200px;
-        padding: 10px;
-        border-radius: 20px;
-        margin-right: 0;
-        padding-right: 0;
+    margin: 20px;
+    border: solid 2px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    margin-right: 0;
+    padding-right: 0;
        
        
 }
 .nombre{
-        border: solid 1px;
+    border: solid 1px;
 }
 .apellido{
-        border: solid 1px
+    border: solid 1px
 }
 .email{
-        border: solid 1px
+    border: solid 1px
 }
 .mensaje{
-        border: solid 1px
+    border: solid 1px
 }
 .enviarContacto{
-        width:90px;
+    width:90px;
         
-        border-radius: 2px;
+    border-radius: 2px;
 }
 .contactos{
-        width: 300px;
-        padding: 20px;
-        margin: 30px;
+    width: 300px;
+    padding: 20px;
+    margin: 30px;
 }
 .wsp{
     width: 30px;
@@ -192,7 +190,7 @@ footer{
     margin-bottom: 0%;
     justify-content: space-around;
     height: 100px;
-    
+    position: relative;
 }
 .footerPreguntas{
     background-color: grey;
@@ -500,7 +498,7 @@ a button{
         margin-bottom: 40px;
     }
 }
-@media( max-width:939px){
+@media( max-width:970px){
     .navegador > ul {
         position: fixed;
         display: flex;
@@ -596,6 +594,7 @@ a button{
         flex-direction: column;
         align-items: center;
         height: 200px;
+        margin-bottom: 0%;
     }
     .pie > div{
         display: flex;
@@ -729,78 +728,186 @@ a button{
 
 
 /*compra*/
+.bodyCompra{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto auto auto ;
+    grid-template-areas:  "nav    nav    nav    nav"
+                          "main   main   main   main"
+                          "footer footer footer footer"; 
+}
 .datosComprador{
     display:flex;
+    width:100%;
+    justify-content: start;
 }
 
 
 .formularioCompra{
-    width: 1000px;
-    height: 250px;
+    width: 100%;
+    height: auto;
     background-color: rgba(92, 71, 2, 0.425);
-    border-radius: 10px solid 2px;
+    border: solid 2px;
+    border-radius: 10px;
     padding: 10px;
     margin: 20px;
-    display: inline-block;
-    position: relative;
+    margin-left: 125px;
+    display: flex;
+    flex-direction: column;
 }
 .formularioCompra input{
     border: solid 1px;
+    margin: 10px;
+    border:solid 2px;
+    padding: 5px;
 }
-
-
+.formularioCompra input:hover{
+    transform: scale(1.1,1.1);
+}
+.imagenCompra{
+    margin: 0 50px 0 250px;
+    width: 80%;
+}
 .imagenCompra img{
     width: 200px;
     height: 200px;
     border-radius: 10px;
     border: solid 2px;
     margin-top: 35px;
-    margin-right: 350px;
+    
 }
 .imagenCompra p{
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.mediosPagos {
-   margin: 20px;
-}
-.mediosPagos .pagos{
-    width: 735px;
-    height: 300px;
-    background-color: rgba(92, 71, 2, 0.425);
-    border-radius: 10px solid 2px;
-    padding: 10px;
-}
-.envios{
-    width: 735px;
-    height: 125px;
-    background-color: rgba(92, 71, 2, 0.425);
-    border-radius: 10px solid 2px;
-    padding: 10px;
-    display: block;
+.imagenCompra > img:hover{
+    transform: scale(1.1,1.1);
     
-   
 }
+.pagoYenvio{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 100%;
+    height: auto;
+}
+
+.pagos{
+    width: 50%;
+    height: auto;
+    margin-left: 125px;
+    background-color: rgba(92, 71, 2, 0.425);
+    border-radius: 10px;
+    border: solid 2px;
+    padding: 10px;
+    display:flex;
+    flex-direction: column;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.mediosPagos > .pagos >input{
+    margin: 10px;
+    border: solid 2px;
+    width: 85%;
+    padding: 5px;
+}
+.mediosPagos > .pagos > label >input{
+    margin: 10px;
+    border: solid 2px;
+    
+}
+.pagos > input:hover{
+    transform: scale(1.1,1.1);
+}
+
+.envios{
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    height: auto;
+    background-color: rgba(92, 71, 2, 0.425);
+    border-radius: 10px; 
+    border: solid 2px;
+    padding: 10px;
+    margin: 10px 20px 50px 125px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.envios > label > input{
+    margin: 10px;
+}
+
 .comprar{
-    border: solid 1px;
+    border: solid 2px;
     border-radius: 10px;
     width: 110px;
-    position: initial;
-    margin-bottom: 30px;
-    margin-top: 40px;
-
+    height: 30px;
+    margin: 0px 20px 40px 125px;
 }
+.comprar:hover{
+    transform: scale(1.1,1.1);
+}
+@media(max-width:970px){
+
+
+    .navegador > .fa-bars {
+        display: block;
+        font-size: 40px;
+    }
+    .navegador > ul > li {
+        margin: 20px 0px;
+    }
+    .navegador > ul > li:nth-child(1){
+        margin-top: 100px;
+    }
+    .navegador > .fa-bars:hover + ul{
+        left: 0;
+    }
+    .navegador > ul:hover{
+        left: 0;
+    }
+}
+@media(max-width:882px){
+    .datosComprador{
+        display: flex;
+        flex-direction: column-reverse;
+        width:50%;
+    }
+    .imagenCompra{
+        margin-left: 125px;
+        
+    }
+    .pagos{
+        width:50%;
+    }
+    .envios{
+        width:50%;
+    }
+}
+@media(max-width:882px){
+    .formularioCompra, .pagos, .envios, .comprar{
+        margin-left: 80px;
+    }
+    .imagenCompra{
+        margin-left: 80px;
+    }
+}
+
+
+
+
+ 
+
+
 
 /* producto */
 
 .bodyProducto{
     display: grid;
     grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto 70px;
+    grid-template-rows: auto auto auto;
     grid-template-areas: "nav nav nav nav"
                          "main main main main"
                          "footer footer footer footer";
-    width: 1370px;                     
+    width: 100%;                     
 }
 
 .taladro .imgTaladro{
@@ -809,10 +916,11 @@ a button{
     border: solid 2px;
     margin-top: 60px;
     margin-left: 400px;
+    margin-bottom: 50px;
     
 }
 .taladro .imgTaladro:hover{
-    transform: scale(1.5,1.5);
+    transform: scale(1.1,1.1);
     border-radius: 10px;
 }
 
@@ -863,6 +971,7 @@ a button{
     width: 1300px;
     
 }
+
 @media(max-width:750px){
     .taladro .p2{
         font-size: 25px;
