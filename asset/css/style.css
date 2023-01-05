@@ -134,11 +134,8 @@ main{
     margin: 20px;
     border: solid 2px;
     width: 200px;
-    padding: 10px;
+    padding:30px;
     border-radius: 20px;
-    margin-right: 0;
-    padding-right: 0;
-    
 }
 
 .nombre,.apellido,.email,.mensaje {
@@ -170,13 +167,11 @@ main{
 }
 .encontranos{
     width: 300px;
+    margin-bottom: 150px;
 }
 .encontranos > .mapa{
     width: 100%;
 }
-
-
-
 footer{
     display: grid;
     grid-area: footer;
@@ -1064,20 +1059,30 @@ a button{
 
 
 /* preguntas frecuentes*/
+
+.bodyPreguntas{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "nav    nav    nav    nav"
+                         "main   main   main   main"
+                         "footer footer footer footer";     
+}
+nav{
+    grid-area: nav;
+}
+.preguntasFrecuentes{
+    grid-area: main;
+}
+.preguntasFrecuentes > h1{
+    margin: 20px;
+}
 .preguntas{
     margin: 20px;
     padding: 5px;
     list-style: none;
 }
-.cuerpo > ul > li{
-    margin: 20px;
-    padding: 5px;
-    list-style: none;
-}
-.cuerpo{
-    margin-bottom: 200px;
-}
- .preguntasFrecuentes ul p{
+.preguntasFrecuentes ul p{
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
 }
