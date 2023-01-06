@@ -942,12 +942,21 @@ a button{
 
 .bodyProducto{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(4,1fr);
     grid-template-rows: auto auto auto;
     grid-template-areas: "nav nav nav nav"
                          "main main main main"
                          "footer footer footer footer";
-    width: 100%;                     
+                        
+}
+
+main{
+    grid-area: main;
+}
+.taladro{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
 }
 
 .taladro .imgTaladro{
@@ -955,7 +964,7 @@ a button{
     height: 350px;
     border: solid 2px;
     margin-top: 60px;
-    margin-left: 400px;
+   
     margin-bottom: 50px;
     
 }
@@ -963,18 +972,8 @@ a button{
     transform: scale(1.1,1.1);
     border-radius: 10px;
 }
-
-
-.taladro{
-    grid-area: main;
-    grid-column-start: auto;
-    margin: 20px;
-  
-    
-    
-}
 .taladro .p1{
-    margin-left: 250px;
+   
     margin-bottom: 50px;
     font-size: 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -1008,7 +1007,7 @@ a button{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-bottom: 100px;
     height: 200px;
-    width: 1300px;
+   
     
 }
 
