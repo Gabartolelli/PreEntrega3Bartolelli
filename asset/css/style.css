@@ -187,6 +187,7 @@ footer{
     justify-content: space-around;
     height: auto;
     position: relative;
+    margin-top: 100px;
 }
 .footerPreguntas{
     background-color: grey;
@@ -249,7 +250,7 @@ footer{
 .bodyIndex{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: auto auto auto 50px;
+    grid-template-rows: auto auto auto auto;
     grid-template-areas:  "nav    nav    nav    nav"
                           "header header header header"
                           "main   main   main   main"
@@ -956,26 +957,25 @@ main{
 .taladro{
     display: flex;
     flex-direction: column;
+    margin: 30px;
     width: 90%;
 }
 
-.taladro .imgTaladro{
+.taladro > .imgTaladro{
     width: 500px;
-    height: 350px;
     border: solid 2px;
-    margin-top: 60px;
-   
-    margin-bottom: 50px;
-    
+    border-radius: 10px;
+    margin: 30px;
 }
 .taladro .imgTaladro:hover{
     transform: scale(1.1,1.1);
     border-radius: 10px;
 }
 .taladro .p1{
-   
+   margin: 20px;
     margin-bottom: 50px;
     font-size: 30px;
+    width: 500px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    
 }
@@ -985,7 +985,7 @@ main{
     padding: 5px;
 }
 .taladro input:hover{
-    transform: scale(1.2,1.2);
+    transform: scale(1.1,1.1);
     margin-left: 20px;
 }
 .taladro h3{
@@ -1002,7 +1002,7 @@ main{
 .taladro button:hover{
     transform: scale(1.2,1.2);
 }
-.taladro .p2{
+.taladro > div >.p2{
     font-size: larger 15px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-bottom: 100px;
@@ -1012,31 +1012,29 @@ main{
 }
 
 @media(max-width:750px){
-    .taladro .p2{
-        font-size: 25px;
+    .taladro > .p1 {
+        width: auto;
     }
-    .taladro .imgTaladro:hover{
-        transform: scale(1.5,1.5);
-        border-radius: 10px;
+    .taladro > div > .p2{
+        font-size: 20px;
+        margin-bottom: 100px;
     }
-    .taladro input:hover{
-        transform: scale(1.2,1.2);
-        margin-left: 20px;
-    }
-    
+
 }
-@media(max-width:500px){
+@media(max-width:600px){
+    .taladro > .imgTaladro{
+        width:350px;
+    }
     .taladro .p1{
         font-size: 35px;
         text-align: start;
-        margin-left: 200px;
         margin-top: 20px;
     }
     .taladro > input{
         width: 250px;
         height: 25px;
     }
-    .taladro h3{
+    .taladro > div > h3{
         font-size: 40px;
     }
     .taladro button{
@@ -1044,15 +1042,23 @@ main{
         height: 35px;
         
     }
-    .taladro .imgTaladro:hover{
-        transform: scale(1.5,1.5);
-        border-radius: 10px;
+ 
+}
+@media(max-width:460px){
+    .taladro > .imgTaladro{
+        width:275px;
     }
-    .taladro input:hover{
-        transform: scale(1.2,1.2);
-        margin-left: 20px;
+    .taladro .p1{
+        font-size: 30px;
+      
     }
-  
+    .taladro > div > h3 {
+        font-size: 30px;
+    }
+    .taladro > div > .p2{
+        font-size: 15px;
+        margin-bottom: 100px;
+    }
 }
 
 
