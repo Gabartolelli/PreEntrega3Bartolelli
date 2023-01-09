@@ -1,0 +1,44 @@
+body{
+    background-color: rgba(206, 218, 42, 0.719);
+}
+.bodyContacto{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "nav    nav    nav    nav"
+                         "main   main   main   main"
+                         "footer footer footer footer";
+}
+.bodyIndex{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:  "nav    nav    nav    nav"
+                          "header header header header"
+                          "main   main   main   main"
+                          "footer footer footer footer"; 
+}
+.bodyCompra{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto auto auto ;
+    grid-template-areas:  "nav    nav    nav    nav"
+                          "main   main   main   main"
+                          "footer footer footer footer"; 
+}
+.bodyCompra{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto auto auto ;
+    grid-template-areas:  "nav    nav    nav    nav"
+                          "main   main   main   main"
+                          "footer footer footer footer"; 
+}
+.bodyPreguntas{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "nav    nav    nav    nav"
+                         "main   main   main   main"
+                         "footer footer footer footer";     
+}

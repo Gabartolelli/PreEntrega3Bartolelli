@@ -15,20 +15,38 @@ body {
   grid-template-areas: "nav    nav    nav    nav" "main   main   main   main" "footer footer footer footer";
 }
 
+.bodyIndex {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "nav    nav    nav    nav" "header header header header" "main   main   main   main" "footer footer footer footer";
+}
+
+.bodyCompra {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "nav    nav    nav    nav" "main   main   main   main" "footer footer footer footer";
+}
+
+.bodyCompra {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "nav    nav    nav    nav" "main   main   main   main" "footer footer footer footer";
+}
+
+.bodyPreguntas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "nav    nav    nav    nav" "main   main   main   main" "footer footer footer footer";
+}
+
 .navegadorBar {
   width: 100%;
 }
-
-.navegadorBarra {
-  grid-area: nav;
-  width: auto;
-}
-
-.navegador .fa-bars {
-  display: none;
-}
-
-.navegador {
+.navegadorBar .navegador {
   position: relative;
   background-color: darkslategrey;
   display: flex;
@@ -37,22 +55,22 @@ body {
   align-items: center;
   text-align: center;
 }
-
-.navegador > ul {
+.navegadorBar .navegador .fa-bars {
+  display: none;
+}
+.navegadorBar .navegador > ul {
   text-align: center;
   list-style-type: none;
   display: flex;
 }
-
-.navegador > ul > li {
+.navegadorBar .navegador > ul > li {
   text-align: center;
   margin: 0 10px 0 20px;
   color: white;
   font-size: medium;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-
-.navegador > a > .logo {
+.navegadorBar .navegador > a > .logo {
   width: 50px;
   height: 50px;
   padding: 5px;
@@ -60,17 +78,14 @@ body {
   justify-content: left;
   list-style-type: none;
 }
-
-.navegador > div {
+.navegadorBar .navegador > div {
   display: flex;
   align-items: center;
 }
-
-.navegador > div > form {
+.navegadorBar .navegador > div > form {
   position: relative;
 }
-
-.navegador > div > form > .buscador {
+.navegadorBar .navegador > div > form > .buscador {
   padding: 10px;
   margin: 30px;
   margin-right: 0;
@@ -81,8 +96,7 @@ body {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
-
-.navegador > div > form > button {
+.navegadorBar .navegador > div > form > button {
   padding: 10px;
   margin: 30px;
   margin-left: 0;
@@ -95,8 +109,7 @@ body {
   position: absolute;
   right: -50px;
 }
-
-.navegador > div > a > .imgContacto {
+.navegadorBar .navegador > div > a > .imgContacto {
   width: 50px;
   height: 50px;
   margin: 10px;
@@ -104,86 +117,127 @@ body {
   align-items: flex-end;
 }
 
-main {
-  grid-area: main;
+header {
+  display: grid;
+  grid-area: header;
+  width: 100%;
+  height: 500px;
+}
+header .encabezado {
+  background-image: url(../img/variety-handy-tools-on-dark-background-labor-day-background-concept.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+header .publicidad {
+  display: flex;
+  margin-top: 15%;
+  justify-content: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 30px;
+}
+@media (max-width: 1260px) {
+  header .publicidad {
+    font-size: 40px;
+    margin-top: 250px;
+  }
+}
+@media (max-width: 1087px) {
+  header .publicidad {
+    font-size: 45px;
+    margin-top: 200px;
+  }
 }
 
-.tituloContacto {
+.contacto {
+  grid-area: main;
+}
+.contacto .tituloContacto {
   display: flex;
   justify-content: center;
   font-size: 30px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin: 20px;
 }
-
-.titulo {
-  margin: 30px;
-  margin-bottom: 50px;
-  text-align: center;
+@media (max-width: 1207px) {
+  .contacto .tituloContacto {
+    margin-bottom: 30px;
+  }
 }
-
-.tarjetaContacto {
+@media (max-width: 432px) {
+  .contacto .tituloContacto {
+    font-size: 20px;
+  }
+}
+.contacto .tarjetaContacto {
   display: flex;
   align-items: flex-start;
   flex-direction: row;
   justify-content: center;
 }
-
-.formularioContacto {
+.contacto .tarjetaContacto .formularioContacto {
   margin: 20px;
   border: solid 2px;
   width: 200px;
   padding: 30px;
   border-radius: 20px;
 }
-
-.nombre, .apellido, .email, .mensaje {
+.contacto .tarjetaContacto .formularioContacto .nombre, .contacto .tarjetaContacto .formularioContacto .apellido, .contacto .tarjetaContacto .formularioContacto .email, .contacto .tarjetaContacto .formularioContacto .mensaje {
   border: solid 1px;
   margin: 10px;
 }
-
-.enviarContacto {
+.contacto .tarjetaContacto .formularioContacto .enviarContacto {
   width: 90px;
   border-radius: 2px;
   margin: 10px;
 }
-
-.contactos {
+@media (max-width: 1207px) {
+  .contacto .tarjetaContacto .formularioContacto {
+    margin-bottom: 30px;
+  }
+}
+.contacto .tarjetaContacto .contactos {
   width: 300px;
   padding: 20px;
   margin: 30px;
 }
-
-.wsp {
+.contacto .tarjetaContacto .contactos .wsp, .contacto .tarjetaContacto .contactos .fijo, .contacto .tarjetaContacto .contactos .mail {
   width: 30px;
   height: 30px;
 }
-
-.fijo {
-  width: 30px;
-  height: 30px;
+@media (max-width: 432px) {
+  .contacto .tarjetaContacto .contactos {
+    width: 250px;
+  }
 }
-
-.mail {
-  width: 30px;
-  height: 30px;
-}
-
-.encontranos {
+.contacto .tarjetaContacto .encontranos {
   width: 300px;
   margin-bottom: 150px;
 }
-
-.encontranos > .mapa {
+.contacto .tarjetaContacto .encontranos > .mapa {
   width: 100%;
 }
-
-footer {
-  display: grid;
-  grid-area: footer;
+@media (max-width: 433px) {
+  .contacto .tarjetaContacto .encontranos > .mapa {
+    width: 90%;
+  }
+}
+@media (max-width: 1000px) {
+  .contacto .tarjetaContacto .encontranos {
+    margin-bottom: 200px;
+  }
+}
+@media (max-width: 1000px) {
+  .contacto .tarjetaContacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .pie {
+  display: grid;
+  grid-area: footer;
   display: flex;
   align-items: center;
   padding: 10px;
@@ -194,22 +248,14 @@ footer {
   position: relative;
   margin-top: 100px;
 }
-
-.footerPreguntas {
-  background-color: grey;
-  margin-bottom: 0%;
-}
-
 .pie img {
   padding: 20px;
   margin: 10px;
 }
-
-.seguinos {
+.pie .seguinos {
   font-size: medium;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-
 .pie .preg {
   margin-left: 50px;
   font-size: 16px;
@@ -218,84 +264,24 @@ footer {
   color: black;
 }
 
-.frecuentes {
-  text-decoration: none;
-  color: black;
-  width: 400px;
-}
-
-@media (max-width: 1207px) {
-  .formularioContacto {
-    margin-bottom: 30px;
-  }
-}
-@media (max-width: 1000px) {
-  .tarjetaContacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .encontranos {
-    margin-bottom: 200px;
-  }
-}
-@media (max-width: 433px) {
-  .encontranos > .mapa {
-    width: 90%;
-  }
-}
-@media (max-width: 432px) {
-  .tituloContacto {
-    font-size: 20px;
-  }
-  .contactos {
-    width: 250px;
-  }
-}
 /* inicio*/
-.bodyIndex {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto auto auto auto;
-  grid-template-areas: "nav    nav    nav    nav" "header header header header" "main   main   main   main" "footer footer footer footer";
-}
-
-header {
-  display: grid;
-  grid-area: header;
-  width: 100%;
-  height: 500px;
-}
-
-.encabezado {
-  background-image: url(../img/variety-handy-tools-on-dark-background-labor-day-background-concept.jpg);
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-}
-
-.publicidad {
-  display: flex;
-  margin-top: 15%;
-  justify-content: center;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 30px;
-}
-
-main {
+.index {
   display: grid;
   grid-area: main;
   width: 100%;
   height: auto;
 }
-
-.ofertas {
+.index .ofertas {
   text-align: center;
   font-size: 40px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-
-.card {
+.index .cards {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.index .cards .card {
   width: 500px;
   height: 600px;
   border-radius: 10px;
@@ -306,29 +292,31 @@ main {
   margin: 20px;
   margin-bottom: 40px;
 }
-
-.producto1 {
+.index .cards .card .producto1 {
   width: 100%;
   height: 75%;
   border: solid 1px;
   margin-bottom: 40px;
 }
-
-.descripcion1 {
+.index .cards .card .descripcion1 {
   font-size: 30px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   padding: 5px;
   margin-bottom: 5px;
 }
-
-.card12 {
+.index .cards .card a button {
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.171);
+  margin: 10px;
+}
+.index .cards .card12 {
   display: flex;
   flex-direction: column;
   align-items: end;
   margin-right: 200px;
 }
-
-.card2 {
+.index .cards .card12 .card2 {
   height: 275px;
   width: 250px;
   border-radius: 10px;
@@ -338,87 +326,66 @@ main {
   padding: 20px;
   margin: 10px;
 }
-
-.producto2 {
+.index .cards .card12 .card2 .producto2 {
   width: 100%;
   height: 65%;
   border: solid 2px;
   margin-bottom: 20px;
 }
-
-.card3 {
-  height: 275px;
-  width: 250px;
-  border-radius: 10px;
-  border: solid 2px;
-  overflow: hidden;
-  background-color: khaki;
-  padding: 20px;
-  margin: 10px;
-}
-
-.producto3 {
-  width: 100%;
-  height: 65%;
-  border: solid 2px;
-  margin-bottom: 20px;
-}
-
-.descripcion {
+.index .cards .card12 .card2 .descripcion {
   font-size: small;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   padding: 5px;
   margin-bottom: 5px;
 }
-
-.boton {
+.index .cards .card12 .card2 .boton {
   padding: 5px;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.171);
   margin: 10px;
 }
-
-.boton:hover {
-  transform: scale(1.1, 1.1);
-}
-
-a button {
-  padding: 5px;
+.index .cards .card12 .card3 {
+  height: 275px;
+  width: 250px;
   border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.171);
+  border: solid 2px;
+  overflow: hidden;
+  background-color: khaki;
+  padding: 20px;
   margin: 10px;
 }
-
-.cards {
-  display: flex;
-  justify-content: space-around;
+.index .cards .card12 .card3 .producto3 {
   width: 100%;
+  height: 65%;
+  border: solid 2px;
+  margin-bottom: 20px;
 }
-
-.cards .boton:hover {
-  transform: scale(1.1, 1.1);
+.index .cards .card12 .card3 .descripcion {
+  font-size: small;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 5px;
+  margin-bottom: 5px;
 }
-
-.card > a > button:hover {
-  transform: scale(1.1, 1.1);
+.index .cards .card12 .card3 .boton {
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.171);
+  margin: 10px;
 }
-
-.vendido {
+.index .vendido {
   font-size: 34px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   padding: 20px;
   margin: 40px;
   text-align: center;
 }
-
-.masVendido {
+.index .masVendido {
   display: flex;
   justify-content: space-around;
   margin-bottom: 150px;
   width: 100%;
 }
-
-.masVendido1 {
+.index .masVendido .masVendido1 {
   width: 250px;
   height: 300px;
   border-radius: 10px;
@@ -427,19 +394,22 @@ a button {
   padding: 10px;
   background-color: khaki;
 }
-
-.masVendido1 img {
+.index .masVendido .masVendido1 > img {
   width: 100%;
   height: 70%;
   border: solid 1px;
 }
-
-.masVendido1 p {
+.index .masVendido .masVendido1 > p {
   margin-bottom: 20px;
   font-size: 15px;
 }
-
-.masVendido2 {
+.index .masVendido .masVendido1 .boton {
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.171);
+  margin: 10px;
+}
+.index .masVendido .masVendido2 {
   width: 250px;
   height: 300px;
   border-radius: 10px;
@@ -448,19 +418,22 @@ a button {
   padding: 10px;
   background-color: khaki;
 }
-
-.masVendido2 img {
+.index .masVendido .masVendido2 > img {
   width: 100%;
   height: 70%;
   border: solid 1px;
 }
-
-.masVendido2 p {
+.index .masVendido .masVendido2 > p {
   margin-bottom: 20px;
   font-size: 15px;
 }
-
-.masVendido3 {
+.index .masVendido .masVendido2 .boton {
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.171);
+  margin: 10px;
+}
+.index .masVendido .masVendido3 {
   width: 250px;
   height: 300px;
   border-radius: 10px;
@@ -469,18 +442,22 @@ a button {
   padding: 10px;
   background-color: khaki;
 }
-
-.masVendido3 img {
+.index .masVendido .masVendido3 > img {
   width: 100%;
   height: 70%;
   border: solid 1px;
 }
-
-.masVendido > .masVendido3 > button {
-  margin-top: 25px;
+.index .masVendido .masVendido3 > p {
+  margin-bottom: 20px;
+  font-size: 15px;
 }
-
-.masVendido4 {
+.index .masVendido .masVendido3 .boton {
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.171);
+  margin: 10px;
+}
+.index .masVendido .masVendido4 {
   width: 250px;
   height: 300px;
   border-radius: 10px;
@@ -488,6 +465,21 @@ a button {
   margin: 20px;
   padding: 10px;
   background-color: khaki;
+}
+.index .masVendido .masVendido4 > img {
+  width: 100%;
+  height: 70%;
+  border: solid 1px;
+}
+.index .masVendido .masVendido4 > p {
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+.index .masVendido .masVendido4 .boton {
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.171);
+  margin: 10px;
 }
 
 .masVendido4 img {
@@ -778,13 +770,6 @@ a button {
   }
 }
 /*compra*/
-.bodyCompra {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto auto auto;
-  grid-template-areas: "nav    nav    nav    nav" "main   main   main   main" "footer footer footer footer";
-}
-
 .datosComprador {
   display: flex;
   width: 100%;
@@ -946,11 +931,11 @@ a button {
   }
 }
 /* producto */
-.bodyProducto {
+.bodyCompra {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto auto auto;
-  grid-template-areas: "nav nav nav nav" "main main main main" "footer footer footer footer";
+  grid-template-areas: "nav    nav    nav    nav" "main   main   main   main" "footer footer footer footer";
 }
 
 main {
@@ -1065,13 +1050,6 @@ main {
   }
 }
 /* preguntas frecuentes*/
-.bodyPreguntas {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto auto auto;
-  grid-template-areas: "nav    nav    nav    nav" "main   main   main   main" "footer footer footer footer";
-}
-
 nav {
   grid-area: nav;
 }

@@ -1,468 +1,303 @@
 /* contacto */
-*{
-    padding: 0;
-    margin: 0;
-    
-}
-body{
-    background-color: rgba(206, 218, 42, 0.719);
-}
-.bodyContacto{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: auto auto auto;
-    grid-template-areas: "nav    nav    nav    nav"
-                         "main   main   main   main"
-                         "footer footer footer footer";
-}
+@import "reset";
+@import "body";
+@import "navegador";
+@import "header";
+@import "main";
+@import "footer";
 
 
 
-.navegadorBar{
-    
-    width: 100%;
-}
-.navegadorBarra{
-    grid-area: nav;
-    width:auto;
-}
 
-.navegador .fa-bars{
-    display: none;
-}
 
-.navegador{
-    position: relative;
-    background-color: darkslategrey;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    
-}
 
-.navegador > ul {
-    text-align: center;
-    list-style-type: none;
-    display: flex;
- }
 
-.navegador > ul > li {
-    text-align: center;
-    margin: 0 10px 0 20px;
-    color: white;
-    font-size: medium;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
 
-.navegador > a > .logo{
-    width: 50px;
-    height:50px;
-    padding: 5px;
-    margin: 10px;
-    justify-content: left;
-    list-style-type: none;
-}
 
-.navegador > div {
-    display: flex;
-    align-items: center;
 
-}
-.navegador > div > form{
-    position: relative;
-}
- .navegador > div > form > .buscador {
-    padding: 10px;
-    margin: 30px;
-    margin-right:0;
-    width: 200px;
-    border-radius: 10px;
-    border: 1px solid;
-    border-right: 0;
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0;
-       
-}
-.navegador > div > form > button {
-    padding: 10px;
-    margin: 30px;
-    margin-left:0;
-    width: 40px;
-    border-radius: 10px;
-    border: 1px solid;
-    border-left: 0;
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
-    position: absolute;
-    right:-50px;
-}
-.navegador > div > a > .imgContacto{
-    width:50px;
-    height: 50px;
-    margin: 10px;
-    margin-left: 50px;
-    align-items: flex-end;
-        
-        
-}
-main{
-   grid-area: main;
-   
-}
-.tituloContacto{
-    display: flex;
-    justify-content: center;
-    font-size: 30px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: 20px;
-}
 
-.titulo{
-    margin: 30px;
-    margin-bottom: 50px;
-    text-align: center;
-}
-.tarjetaContacto{
-    display: flex;
-    align-items: flex-start;
-    flex-direction: row;
-    justify-content: center;
-}
-.formularioContacto{
-    margin: 20px;
-    border: solid 2px;
-    width: 200px;
-    padding:30px;
-    border-radius: 20px;
-}
 
-.nombre,.apellido,.email,.mensaje {
-    border: solid 1px;
-    margin: 10px;
-}
 
-.enviarContacto{
-    width:90px;
-    border-radius: 2px;
-    margin: 10px;
-}
-.contactos{
-    width: 300px;
-    padding: 20px;
-    margin: 30px;
-}
-.wsp{
-    width: 30px;
-    height: 30px;   
-}
-.fijo{
-    width: 30px;
-    height: 30px
-}
-.mail{
-    width: 30px;
-    height: 30px   
-}
-.encontranos{
-    width: 300px;
-    margin-bottom: 150px;
-}
-.encontranos > .mapa{
-    width: 100%;
-}
-footer{
-    display: grid;
-    grid-area: footer;
-    
-  
-}
-.pie{
-    display: flex; 
-    align-items: center;
-    padding: 10px;
-    background-color: grey;
-    margin-bottom: 0%;
-    justify-content: space-around;
-    height: auto;
-    position: relative;
-    margin-top: 100px;
-}
-.footerPreguntas{
-    background-color: grey;
-    margin-bottom: 0%;
-}
-.pie img{
-    padding: 20px;
-    margin: 10px;
-}
-.seguinos{
-    font-size: medium;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-.pie .preg{
-   margin-left: 50px;
-   font-size: 16px;
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   text-decoration: none;
-   color: black;
-   
-}
-.frecuentes{
-    text-decoration: none;
-    color: black;
-    width: 400px;
-}
-@media(max-width:1207px){
-    .formularioContacto{
-        margin-bottom: 30px;
-    }
-}
-@media(max-width:1000px){
-    .tarjetaContacto{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-    }
-    .encontranos {
-        margin-bottom: 200px;
-    }
-    
-}
-@media(max-width:433px){
-    .encontranos > .mapa{
-        width: 90%;
-    }
-}
-@media(max-width:432px){
-    .tituloContacto{
-        font-size: 20px;
-       
-    }
-    .contactos{
-        width: 250px;
-    }
-}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* inicio*/
-.bodyIndex{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas:  "nav    nav    nav    nav"
-                          "header header header header"
-                          "main   main   main   main"
-                          "footer footer footer footer"; 
-}
 
-header{
-    display: grid;
-    grid-area: header;
-    width: 100%;
-    height: 500px;
-}
-.encabezado{
-    background-image: url(../img/variety-handy-tools-on-dark-background-labor-day-background-concept.jpg);
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-}
-.publicidad{
-    display: flex;
-    margin-top: 15%;
-    justify-content: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 30px;
-  
-}
-main{
+
+
+
+
+.index{
     display: grid;
     grid-area: main;
     width: 100%;
     height: auto;
+    .ofertas{
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .cards{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        .card{
+            width: 500px;
+            height: 600px;
+            border-radius:10px;
+            border: solid 2px;
+            overflow: hidden;
+            background-color: khaki ;
+            padding: 20px;
+            margin: 20px;
+            margin-bottom: 40px;
+            .producto1{
+                width: 100%;
+                height: 75%;
+                border: solid 1px;
+                margin-bottom: 40px;
+            }
+            .descripcion1{
+                font-size: 30px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                padding: 5px;
+                margin-bottom: 5px;
+            }
+            a button{
+                padding: 5px;
+                border-radius: 10px;
+                background-color: rgba(0, 0, 0, 0.171);
+                margin: 10px;
+            }
+          
+        }
+        .card12{
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            margin-right: 200px;
+            .card2{
+                height: 275px; 
+                width: 250px;
+                border-radius:10px;
+                border: solid 2px;
+                overflow: hidden;
+                background-color: khaki ;
+                padding: 20px;
+                margin: 10px;
+                
+                .producto2 {
+                    width: 100%;
+                    height: 65%;
+                    border: solid 2px;
+                    margin-bottom: 20px;
+                }
+                .descripcion{
+                    font-size: small;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    padding: 5px;
+                    margin-bottom: 5px;
+                }
+                .boton{
+                    padding: 5px;
+                    border-radius: 10px;
+                    background-color: rgba(0, 0, 0, 0.171);
+                    margin: 10px;
+                        
+                }
+                 
+            }
+            .card3{
+                height: 275px; 
+                width: 250px;
+                border-radius:10px;
+                border: solid 2px;
+                overflow: hidden;
+                background-color: khaki ;
+                padding: 20px;
+                margin: 10px;
+                .producto3{
+                    width: 100%;
+                    height: 65%;
+                    border: solid 2px;
+                    margin-bottom: 20px;
+                    
+                }
+                .descripcion{
+                    font-size: small;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    padding: 5px;
+                    margin-bottom: 5px;
+                }
+                .boton{
+                    padding: 5px;
+                    border-radius: 10px;
+                    background-color: rgba(0, 0, 0, 0.171);
+                    margin: 10px;
+                        
+                }
+            }
+            
+            
+        }
+    }
+    .vendido{
+        font-size: 34px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding: 20px;
+        margin: 40px;
+        text-align: center;
+        
+    }
+    .masVendido{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 150px;
+        width:100%;
+        .masVendido1{
+            width: 250px;
+            height: 300px;
+            border-radius: 10px;
+            border: solid 2px;
+            margin: 20px;
+            padding: 10px;
+            background-color: khaki;
+            > img{
+                width: 100%;
+                height: 70%;
+                border: solid 1px;
+            }
+            > p{
+                margin-bottom: 20px;
+                font-size: 15px;
+            }
+            .boton{
+                padding: 5px;
+                border-radius: 10px;
+                background-color: rgba(0, 0, 0, 0.171);
+                margin: 10px;
+                    
+            }
+        }
+        .masVendido2{
+            width: 250px;
+            height: 300px;
+            border-radius: 10px;
+            border: solid 2px;
+            margin: 20px;
+            padding: 10px;
+            background-color: khaki;
+            > img{
+                width: 100%;
+                height: 70%;
+                border: solid 1px;
+            }
+            > p{
+                margin-bottom: 20px;
+                font-size: 15px;
+            }
+            .boton{
+                padding: 5px;
+                border-radius: 10px;
+                background-color: rgba(0, 0, 0, 0.171);
+                margin: 10px;
+                    
+            }
+        }
+        .masVendido3{
+            width: 250px;
+            height: 300px;
+            border-radius: 10px;
+            border: solid 2px;
+            margin: 20px;
+            padding: 10px;
+            background-color: khaki;
+            > img{
+                width: 100%;
+                height: 70%;
+                border: solid 1px;
+            }
+            > p{
+                margin-bottom: 20px;
+                font-size: 15px;
+            }
+            .boton{
+                padding: 5px;
+                border-radius: 10px;
+                background-color: rgba(0, 0, 0, 0.171);
+                margin: 10px;
+                    
+            }
+        }
+        .masVendido4{
+            width: 250px;
+            height: 300px;
+            border-radius: 10px;
+            border: solid 2px;
+            margin: 20px;
+            padding: 10px;
+            background-color: khaki;
+            > img{
+                width: 100%;
+                height: 70%;
+                border: solid 1px;
+            }
+            > p{
+                margin-bottom: 20px;
+                font-size: 15px;
+            }
+            .boton{
+                padding: 5px;
+                border-radius: 10px;
+                background-color: rgba(0, 0, 0, 0.171);
+                margin: 10px;
+                    
+            }
+        }
+    }
 }
-.ofertas{
-    text-align: center;
-    font-size: 40px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-.card{
-    width: 500px;
-    height: 600px;
-    border-radius:10px;
-    border: solid 2px;
-    overflow: hidden;
-    background-color: khaki ;
-    padding: 20px;
-    margin: 20px;
-    margin-bottom: 40px;
-  
-}
-.producto1{
-    width: 100%;
-    height: 75%;
-    border: solid 1px;
-    margin-bottom: 40px;
-}
-.descripcion1{
-    font-size: 30px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 5px;
-    margin-bottom: 5px;
-}
-.card12{
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    margin-right: 200px;
-    
-    
-}
-.card2{
-    height: 275px; 
-    width: 250px;
-    border-radius:10px;
-    border: solid 2px;
-    overflow: hidden;
-    background-color: khaki ;
-    padding: 20px;
-    margin: 10px;
-}
-.producto2 {
-    width: 100%;
-    height: 65%;
-    border: solid 2px;
-    margin-bottom: 20px;
+
+
+
+
+
+
+
+
    
-}
-.card3{
-    height: 275px; 
-    width: 250px;
-    border-radius:10px;
-    border: solid 2px;
-    overflow: hidden;
-    background-color: khaki ;
-    padding: 20px;
-    margin: 10px;
-}
-.producto3{
-    width: 100%;
-    height: 65%;
-    border: solid 2px;
-    margin-bottom: 20px;
-}
-   
-.descripcion{
-    font-size: small;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 5px;
-    margin-bottom: 5px;
-}
-.boton{
-    padding: 5px;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.171);
-    margin: 10px;
-    
-}
-.boton:hover{
-    transform: scale(1.1,1.1);
-}
-a button{
-    padding: 5px;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.171);
-    margin: 10px;
-}
-.cards{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-}
-.cards .boton:hover{
-    transform: scale(1.1,1.1);
-}
-.card > a > button:hover{
-    transform: scale(1.1,1.1);
-}
-.vendido{
-    font-size: 34px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 20px;
-    margin: 40px;
-    text-align: center;
-    
-}
-.masVendido{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 150px;
-    width:100%
-}
-.masVendido1{
-    width: 250px;
-    height: 300px;
-    border-radius: 10px;
-    border: solid 2px;
-    margin: 20px;
-    padding: 10px;
-    background-color: khaki;
-}
-.masVendido1 img{
-    width: 100%;
-    height: 70%;
-    border: solid 1px;
-}
-.masVendido1 p{
-    margin-bottom: 20px;
-    font-size: 15px;
-}
-.masVendido2{
-    width: 250px;
-    height: 300px;
-    border-radius: 10px;
-    border: solid 2px;
-    margin: 20px;
-    padding: 10px;
-    background-color: khaki;
-}
-.masVendido2 img{
-    width: 100%;
-    height: 70%;
-    border: solid 1px;    
-}
-.masVendido2 p{
-    margin-bottom: 20px;
-    font-size: 15px;
-}
-.masVendido3{
-    width: 250px;
-    height: 300px;
-    border-radius: 10px;
-    border: solid 2px;
-    margin: 20px;
-    padding: 10px;
-    background-color: khaki;
-}
-.masVendido3 img{
-    width: 100%;
-    height: 70%;
-    border: solid 1px;
-}
-.masVendido > .masVendido3 > button{
-    margin-top: 25px;
-}
-.masVendido4{
-    width: 250px;
-    height: 300px;
-    border-radius: 10px;
-    border: solid 2px;
-    margin: 20px;
-    padding: 10px;
-    background-color: khaki;
-}
+
+
+
+
+
+
+
+
+
+
 .masVendido4 img{
     width: 100%;
     height: 70%;
@@ -769,14 +604,7 @@ a button{
 
 
 /*compra*/
-.bodyCompra{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: auto auto auto ;
-    grid-template-areas:  "nav    nav    nav    nav"
-                          "main   main   main   main"
-                          "footer footer footer footer"; 
-}
+
 .datosComprador{
     display:flex;
     width:100%;
@@ -941,14 +769,13 @@ a button{
 
 /* producto */
 
-.bodyProducto{
+.bodyCompra{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: auto auto auto;
-    grid-template-areas: "nav nav nav nav"
-                         "main main main main"
-                         "footer footer footer footer";
-                        
+    grid-template-rows: auto auto auto ;
+    grid-template-areas:  "nav    nav    nav    nav"
+                          "main   main   main   main"
+                          "footer footer footer footer"; 
 }
 
 main{
@@ -1065,14 +892,7 @@ main{
 
 /* preguntas frecuentes*/
 
-.bodyPreguntas{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: auto auto auto;
-    grid-template-areas: "nav    nav    nav    nav"
-                         "main   main   main   main"
-                         "footer footer footer footer";     
-}
+
 nav{
     grid-area: nav;
 }
