@@ -17,6 +17,10 @@
                     left: 0;
                 }
             }
+            @media(max-width:550px){
+                display: block;
+                font-size: 40px;
+            }
         }
         > ul {
             text-align: center;
@@ -49,6 +53,14 @@
                 &:hover{
                     left: 0;
                 }
+            }
+            @media(max-width:550px){
+                position: fixed;
+                z-index: 100;
+                flex-direction: column;
+                width: 250px;
+                height: 100vh;
+                background-color:darkslategrey ;
             }
             
          }
@@ -102,10 +114,12 @@
             }
         
         }
-        
-        
-        
-        
+        @media(max-width:550px){
+            width: 100%;
+            position: relative;
+            z-index: 100;
+            display: flex;
+            justify-content: space-around;
+        }
     }
-
 }

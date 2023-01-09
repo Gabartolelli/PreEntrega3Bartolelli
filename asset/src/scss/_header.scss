@@ -23,5 +23,22 @@ header{
             font-size: 45px;
             margin-top: 200px;
         }
+        @media(max-width:800px){
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            margin-top: 30%;
+        }
+        @media(max-width:759px){
+            font-size: 30px;
+        }
+        @media(max-width:550px){
+            font-size: 20px;
+            margin-top: 250px;
+        }
+        @media(max-width:368px){
+            font-size: 18px;
+        }
+        
     }
 }
