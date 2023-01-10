@@ -18,7 +18,7 @@ body{
                           "main   main   main   main"
                           "footer footer footer footer"; 
 }
-.bodyCompra{
+.bodyProducto{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: auto auto auto ;
@@ -26,6 +26,7 @@ body{
                           "main   main   main   main"
                           "footer footer footer footer"; 
 }
+
 .bodyCompra{
     display: grid;
     grid-template-columns: repeat(4,1fr);
