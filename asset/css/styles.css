@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: rgba(206, 218, 42, 0.719);
+  background-color: khaki;
 }
 
 .bodyContacto {
@@ -587,7 +587,6 @@ header .publicidad {
     border-radius: 10px;
     border: solid 2px;
     overflow: hidden;
-    background-color: khaki;
     padding: 20px;
     margin: 20px;
     margin-bottom: 40px;
@@ -807,6 +806,139 @@ header .publicidad {
   }
 }
 
+.datosComprador {
+  display: flex;
+  width: 100%;
+  justify-content: start;
+}
+.datosComprador .formularioCompra {
+  width: 100%;
+  height: auto;
+  background-color: rgba(92, 71, 2, 0.425);
+  border: solid 2px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+  margin-left: 125px;
+  display: flex;
+  flex-direction: column;
+}
+.datosComprador .formularioCompra input {
+  border: solid 1px;
+  margin: 10px;
+  border: solid 2px;
+  padding: 5px;
+}
+.datosComprador .formularioCompra input:hover {
+  transform: scale(1.1, 1.1);
+}
+.datosComprador .imagenCompra {
+  margin: 0 50px 0 250px;
+  width: 80%;
+}
+.datosComprador .imagenCompra img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  border: solid 2px;
+  margin-top: 35px;
+}
+.datosComprador .imagenCompra img:hover {
+  transform: scale(1.1, 1.1);
+}
+.datosComprador .imagenCompra p {
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+@media (max-width: 882px) {
+  .datosComprador .imagenCompra {
+    margin-left: 125px;
+    margin-left: 80px;
+  }
+}
+@media (max-width: 882px) {
+  .datosComprador {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 50%;
+  }
+}
+
+.pagoYenvio {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 100%;
+  height: auto;
+}
+.pagoYenvio .pagos {
+  width: 50%;
+  height: auto;
+  margin-left: 125px;
+  background-color: rgba(92, 71, 2, 0.425);
+  border-radius: 10px;
+  border: solid 2px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.pagoYenvio .pagos > input {
+  margin: 10px;
+  border: solid 2px;
+  width: 85%;
+  padding: 5px;
+}
+.pagoYenvio .pagos > input:hover {
+  transform: scale(1.1, 1.1);
+}
+.pagoYenvio .pagos > label > input {
+  margin: 10px;
+  border: solid 2px;
+}
+@media (max-width: 882px) {
+  .pagoYenvio .pagos {
+    width: 50%;
+    margin-left: 80px;
+  }
+}
+.pagoYenvio .envios {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: auto;
+  background-color: rgba(92, 71, 2, 0.425);
+  border-radius: 10px;
+  border: solid 2px;
+  padding: 10px;
+  margin: 10px 20px 50px 125px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.pagoYenvio .envios > label > input {
+  margin: 10px;
+}
+@media (max-width: 882px) {
+  .pagoYenvio .envios {
+    width: 50%;
+    margin-left: 80px;
+  }
+}
+.pagoYenvio .comprar {
+  border: solid 2px;
+  border-radius: 10px;
+  width: 110px;
+  height: 30px;
+  margin: 0px 20px 40px 125px;
+}
+.pagoYenvio .comprar:hover {
+  transform: scale(1.1, 1.1);
+}
+@media (max-width: 882px) {
+  .pagoYenvio .comprar {
+    margin-left: 80px;
+  }
+}
+
 .pie {
   display: grid;
   grid-area: footer;
@@ -857,166 +989,6 @@ header .publicidad {
 }
 
 /*compra*/
-.datosComprador {
-  display: flex;
-  width: 100%;
-  justify-content: start;
-}
-
-.formularioCompra {
-  width: 100%;
-  height: auto;
-  background-color: rgba(92, 71, 2, 0.425);
-  border: solid 2px;
-  border-radius: 10px;
-  padding: 10px;
-  margin: 20px;
-  margin-left: 125px;
-  display: flex;
-  flex-direction: column;
-}
-
-.formularioCompra input {
-  border: solid 1px;
-  margin: 10px;
-  border: solid 2px;
-  padding: 5px;
-}
-
-.formularioCompra input:hover {
-  transform: scale(1.1, 1.1);
-}
-
-.imagenCompra {
-  margin: 0 50px 0 250px;
-  width: 80%;
-}
-
-.imagenCompra img {
-  width: 200px;
-  height: 200px;
-  border-radius: 10px;
-  border: solid 2px;
-  margin-top: 35px;
-}
-
-.imagenCompra p {
-  font-size: 20px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
-.imagenCompra > img:hover {
-  transform: scale(1.1, 1.1);
-}
-
-.pagoYenvio {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  width: 100%;
-  height: auto;
-}
-
-.pagos {
-  width: 50%;
-  height: auto;
-  margin-left: 125px;
-  background-color: rgba(92, 71, 2, 0.425);
-  border-radius: 10px;
-  border: solid 2px;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
-.mediosPagos > .pagos > input {
-  margin: 10px;
-  border: solid 2px;
-  width: 85%;
-  padding: 5px;
-}
-
-.mediosPagos > .pagos > label > input {
-  margin: 10px;
-  border: solid 2px;
-}
-
-.pagos > input:hover {
-  transform: scale(1.1, 1.1);
-}
-
-.envios {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  height: auto;
-  background-color: rgba(92, 71, 2, 0.425);
-  border-radius: 10px;
-  border: solid 2px;
-  padding: 10px;
-  margin: 10px 20px 50px 125px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
-.envios > label > input {
-  margin: 10px;
-}
-
-.comprar {
-  border: solid 2px;
-  border-radius: 10px;
-  width: 110px;
-  height: 30px;
-  margin: 0px 20px 40px 125px;
-}
-
-.comprar:hover {
-  transform: scale(1.1, 1.1);
-}
-
-@media (max-width: 970px) {
-  .navegador > .fa-bars {
-    display: block;
-    font-size: 40px;
-  }
-  .navegador > ul > li {
-    margin: 20px 0px;
-  }
-  .navegador > ul > li:nth-child(1) {
-    margin-top: 100px;
-  }
-  .navegador > .fa-bars:hover + ul {
-    left: 0;
-  }
-  .navegador > ul:hover {
-    left: 0;
-  }
-}
-@media (max-width: 882px) {
-  .datosComprador {
-    display: flex;
-    flex-direction: column-reverse;
-    width: 50%;
-  }
-  .imagenCompra {
-    margin-left: 125px;
-  }
-  .pagos {
-    width: 50%;
-  }
-  .envios {
-    width: 50%;
-  }
-}
-@media (max-width: 882px) {
-  .formularioCompra, .pagos, .envios, .comprar {
-    margin-left: 80px;
-  }
-  .imagenCompra {
-    margin-left: 80px;
-  }
-}
 /* producto */
 .bodyCompra {
   display: grid;
