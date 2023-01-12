@@ -807,20 +807,21 @@ header .publicidad {
 
 .datosComprador {
   display: flex;
+  flex-direction: column;
   width: 100%;
-  justify-content: start;
 }
 .datosComprador .formularioCompra {
-  width: 100%;
+  width: 50%;
   height: auto;
-  background-color: rgba(92, 71, 2, 0.425);
-  border: solid 2px;
-  border-radius: 10px;
-  padding: 10px;
-  margin: 20px;
   margin-left: 125px;
+  margin-bottom: 10px;
+  background-color: rgba(92, 71, 2, 0.425);
+  border-radius: 10px;
+  border: solid 2px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .datosComprador .formularioCompra input {
   border: solid 1px;
@@ -831,8 +832,14 @@ header .publicidad {
 .datosComprador .formularioCompra input:hover {
   transform: scale(1.1, 1.1);
 }
+@media (max-width: 882px) {
+  .datosComprador .formularioCompra {
+    margin-left: 80px;
+  }
+}
 .datosComprador .imagenCompra {
-  margin: 0 50px 0 250px;
+  order: 1;
+  margin: 0 50px 20px 250px;
   width: 80%;
 }
 .datosComprador .imagenCompra img {
@@ -851,15 +858,7 @@ header .publicidad {
 }
 @media (max-width: 882px) {
   .datosComprador .imagenCompra {
-    margin-left: 125px;
     margin-left: 80px;
-  }
-}
-@media (max-width: 882px) {
-  .datosComprador {
-    display: flex;
-    flex-direction: column-reverse;
-    width: 50%;
   }
 }
 

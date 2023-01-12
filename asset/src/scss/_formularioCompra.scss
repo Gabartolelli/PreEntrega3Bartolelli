@@ -1,18 +1,19 @@
 .datosComprador{
     display:flex;
+    flex-direction: column;
     width:100%;
-    justify-content: start;
     .formularioCompra{
-        width: 100%;
+        width: 50%;
         height: auto;
-        background-color: $backgroundformulario;
-        border: solid 2px;
-        border-radius: 10px;
-        padding: 10px;
-        margin: 20px;
         margin-left: 125px;
-        display: flex;
+        margin-bottom: 10px;
+        background-color: $backgroundformulario;
+        border-radius: 10px;
+        border: solid 2px;
+        padding: 10px;
+        display:flex;
         flex-direction: column;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         input{
             border: solid 1px;
             margin: 10px;
@@ -22,9 +23,13 @@
                 transform: scale(1.1,1.1);
             }
         }
+        @media(max-width:882px){
+            margin-left: 80px;
+        }
     }
     .imagenCompra{
-        margin: 0 50px 0 250px;
+        order: 1;
+        margin: 0 50px 20px 250px;
         width: 80%;
         img{
             width: 200px;
@@ -42,13 +47,9 @@
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
         @media(max-width:882px){
-            margin-left: 125px;
+            
             margin-left: 80px;
         }
     }
-    @media(max-width:882px){
-        display: flex;
-        flex-direction: column-reverse;
-        width:50%;
-    }
+
 }
