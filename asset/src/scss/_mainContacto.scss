@@ -18,7 +18,7 @@
      .tarjetaContacto{
          display: flex;
          align-items: flex-start;
-         flex-direction: row;
+         flex-wrap: wrap;
          justify-content: center;
          .formularioContacto{
              margin: 20px;
@@ -29,6 +29,7 @@
              .nombre,.apellido,.email,.mensaje {
                  border: solid 1px;
                  margin: 10px;
+                 padding: 5px;
              }
              .enviarContacto{
                  width:90px;
@@ -40,12 +41,21 @@
              }
          }
          .contactos{
+            display: flex;
+            flex-direction: column;
              width: 300px;
              padding: 20px;
              margin: 30px;
+             > div {
+                display: flex;
+                margin: 10px;
+                padding: 5px;
+             }
              .wsp, .fijo, .mail{
                  width: 30px;
                  height: 30px;   
+                 margin-right: 10px;
+                
              }
              @media(max-width:432px){
                 width: 250px;
@@ -55,15 +65,19 @@
          .encontranos{
              width: 300px;
              margin-bottom: 150px;
-             > .mapa{
+            > .direccion{
+                margin-bottom: 10px;
+            }
+            >.mapa{
                  width: 100%;
                  @media(max-width:433px){
                     width: 90%;
                  }
-             }
-             @media(max-width:1000px){
+            }
+            
+            @media(max-width:1000px){
                 margin-bottom: 200px;
-             }
+            }
          }
          @media(max-width:1000px){
             display: flex;

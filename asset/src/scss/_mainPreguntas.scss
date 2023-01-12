@@ -1,0 +1,21 @@
+.preguntasFrecuentes{
+    grid-area: main;
+    > h1{
+        margin: 20px;
+    }
+    .preguntas{
+        margin: 20px;
+        padding: 5px;
+        list-style: none;
+        .entrega{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+
+.preguntasFrecuentes ul p{
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}

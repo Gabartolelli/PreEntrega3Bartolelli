@@ -2,7 +2,7 @@
     width: 100%;
     .navegador{
         position: relative;
-        background-color: darkslategrey;
+        background-color: rgb(80, 77, 77);
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
@@ -29,7 +29,7 @@
             > li {
                 text-align: center;
                 margin: 0 10px 0 20px;
-                color: white;
+                color: black;
                 font-size: medium;
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                 @media( max-width:970px){

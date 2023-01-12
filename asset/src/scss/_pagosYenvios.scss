@@ -16,10 +16,7 @@
         flex-direction: column;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         >input{
-            margin: 10px;
-            border: solid 2px;
-            width: 85%;
-            padding: 5px;
+            @extend %input;
             &:hover{
                 transform: scale(1.1,1.1);
             }

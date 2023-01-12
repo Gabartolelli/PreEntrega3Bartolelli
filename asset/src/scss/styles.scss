@@ -1,6 +1,7 @@
 
 @import "reset";
 @import "variables";
+@import "extend";
 @import "body";
 @import "navegador";
 @import "header";
@@ -10,6 +11,7 @@
 @import "formularioCompra";
 @import "pagosYenvios";
 @import "mainProducto";
+@import "mainPreguntas";
 @import "footer";
 
 
@@ -114,19 +116,4 @@
 
 nav{
     grid-area: nav;
-}
-.preguntasFrecuentes{
-    grid-area: main;
-}
-.preguntasFrecuentes > h1{
-    margin: 20px;
-}
-.preguntas{
-    margin: 20px;
-    padding: 5px;
-    list-style: none;
-}
-.preguntasFrecuentes ul p{
-    padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
 }

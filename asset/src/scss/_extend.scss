@@ -1,0 +1,16 @@
+%tarjetas{
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    border: solid 2px;
+    margin: 20px;
+    padding: 10px;
+    background-color: $colorPrincipal;
+}
+
+%input{
+    margin: 10px;
+    border:solid 2px;
+    padding: 5px;
+    width: 85%;
+}

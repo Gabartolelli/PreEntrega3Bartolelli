@@ -47,7 +47,7 @@ body {
 }
 .navegadorBar .navegador {
   position: relative;
-  background-color: darkslategrey;
+  background-color: rgb(80, 77, 77);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -80,7 +80,7 @@ body {
 .navegadorBar .navegador > ul > li {
   text-align: center;
   margin: 0 10px 0 20px;
-  color: white;
+  color: black;
   font-size: medium;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
@@ -254,7 +254,7 @@ header .publicidad {
 .contacto .tarjetaContacto {
   display: flex;
   align-items: flex-start;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
 }
 .contacto .tarjetaContacto .formularioContacto {
@@ -267,6 +267,7 @@ header .publicidad {
 .contacto .tarjetaContacto .formularioContacto .nombre, .contacto .tarjetaContacto .formularioContacto .apellido, .contacto .tarjetaContacto .formularioContacto .email, .contacto .tarjetaContacto .formularioContacto .mensaje {
   border: solid 1px;
   margin: 10px;
+  padding: 5px;
 }
 .contacto .tarjetaContacto .formularioContacto .enviarContacto {
   width: 90px;
@@ -279,13 +280,21 @@ header .publicidad {
   }
 }
 .contacto .tarjetaContacto .contactos {
+  display: flex;
+  flex-direction: column;
   width: 300px;
   padding: 20px;
   margin: 30px;
 }
+.contacto .tarjetaContacto .contactos > div {
+  display: flex;
+  margin: 10px;
+  padding: 5px;
+}
 .contacto .tarjetaContacto .contactos .wsp, .contacto .tarjetaContacto .contactos .fijo, .contacto .tarjetaContacto .contactos .mail {
   width: 30px;
   height: 30px;
+  margin-right: 10px;
 }
 @media (max-width: 432px) {
   .contacto .tarjetaContacto .contactos {
@@ -295,6 +304,9 @@ header .publicidad {
 .contacto .tarjetaContacto .encontranos {
   width: 300px;
   margin-bottom: 150px;
+}
+.contacto .tarjetaContacto .encontranos > .direccion {
+  margin-bottom: 10px;
 }
 .contacto .tarjetaContacto .encontranos > .mapa {
   width: 100%;
@@ -1054,6 +1066,27 @@ main .taladro > div > .p2 {
   }
 }
 
+.preguntasFrecuentes {
+  grid-area: main;
+}
+.preguntasFrecuentes > h1 {
+  margin: 20px;
+}
+.preguntasFrecuentes .preguntas {
+  margin: 20px;
+  padding: 5px;
+  list-style: none;
+}
+.preguntasFrecuentes .preguntas .entrega {
+  display: flex;
+  flex-direction: column;
+}
+
+.preguntasFrecuentes ul p {
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .pie {
   display: grid;
   grid-area: footer;
@@ -1106,23 +1139,4 @@ main .taladro > div > .p2 {
 /* preguntas frecuentes*/
 nav {
   grid-area: nav;
-}
-
-.preguntasFrecuentes {
-  grid-area: main;
-}
-
-.preguntasFrecuentes > h1 {
-  margin: 20px;
-}
-
-.preguntas {
-  margin: 20px;
-  padding: 5px;
-  list-style: none;
-}
-
-.preguntasFrecuentes ul p {
-  padding: 10px;
-  font-family: Arial, Helvetica, sans-serif;
 }
