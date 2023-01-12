@@ -126,10 +126,10 @@
                     }
                 }
                 .boton{
-                    padding: 5px;
+                    @include boton(0,0,10px,5px);
                     border-radius: 10px;
                     background-color:$backgroundBoton;
-                    margin: 10px;
+                    
                         
                 }
                 @media(max-width:1087px){
