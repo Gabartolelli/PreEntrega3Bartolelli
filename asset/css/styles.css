@@ -942,12 +942,12 @@ main {
 }
 main .taladro {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   margin: 30px;
   width: 90%;
 }
 main .taladro > .imgTaladro {
-  width: 500px;
+  width: 400px;
   border: solid 2px;
   border-radius: 10px;
   margin: 30px;
