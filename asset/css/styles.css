@@ -2,7 +2,9 @@
   padding: 0;
   margin: 0;
 }
-
+body{
+  background-color: rgb(105, 172, 230);
+}
 
 
 .bodyContacto {
@@ -99,7 +101,7 @@
     height: 100vh;
     top: 0;
     left: -350px;
-    background-color: darkslategrey;
+    background-color: rgb(80, 77, 77);
     z-index: 100;
     transition: 0.5s;
   }
@@ -114,7 +116,7 @@
     flex-direction: column;
     width: 250px;
     height: 100vh;
-    background-color: darkslategrey;
+    
   }
 }
 .navegadorBar .navegador > a > .logo {
@@ -261,6 +263,7 @@ header .publicidad {
   width: 200px;
   padding: 30px;
   border-radius: 20px;
+  background-color: rgba(92, 71, 2, 0.425);
 }
 .contacto .tarjetaContacto .formularioContacto .nombre, .contacto .tarjetaContacto .formularioContacto .apellido, .contacto .tarjetaContacto .formularioContacto .email, .contacto .tarjetaContacto .formularioContacto .mensaje {
   border: solid 1px;
@@ -356,7 +359,7 @@ header .publicidad {
   border-radius: 10px;
   border: solid 2px;
   overflow: hidden;
-  background-color: khaki;
+  background-color: rgb(116, 103, 103);
   padding: 20px;
   margin: 20px;
   margin-bottom: 40px;
@@ -402,7 +405,7 @@ header .publicidad {
     border-radius: 10px;
     border: solid 2px;
     overflow: hidden;
-    background-color: khaki;
+    background-color: rgb(116, 103, 103);;
     padding: 20px;
     margin: 20px;
     margin-bottom: 40px;
@@ -415,7 +418,7 @@ header .publicidad {
     border-radius: 10px;
     border: solid 2px;
     overflow: hidden;
-    background-color: khaki;
+    background-color: rgb(116, 103, 103);
     padding: 10px;
     margin: 10px;
     margin-bottom: 40px;
@@ -433,7 +436,7 @@ header .publicidad {
   border-radius: 10px;
   border: solid 2px;
   overflow: hidden;
-  background-color: khaki;
+  background-color: rgb(116, 103, 103);;
   padding: 20px;
   margin: 10px;
 }
@@ -486,7 +489,7 @@ header .publicidad {
     border-radius: 10px;
     border: solid 2px;
     overflow: hidden;
-    background-color: khaki;
+    background-color: rgb(116, 103, 103);;
     padding: 20px;
     margin: 20px;
     margin-bottom: 40px;
@@ -499,7 +502,7 @@ header .publicidad {
     border-radius: 10px;
     border: solid 2px;
     overflow: hidden;
-    background-color: khaki;
+    background-color: rgb(116, 103, 103);;
     padding: 20px;
     margin: 20px;
     margin-bottom: 40px;
@@ -512,7 +515,7 @@ header .publicidad {
     border-radius: 10px;
     border: solid 2px;
     overflow: hidden;
-    background-color: khaki;
+    background-color:rgb(116, 103, 103);;
     padding: 10px;
     margin: 10px;
     margin-bottom: 40px;
@@ -524,7 +527,7 @@ header .publicidad {
   border-radius: 10px;
   border: solid 2px;
   overflow: hidden;
-  background-color: khaki;
+  background-color: rgb(116, 103, 103);;
   padding: 20px;
   margin: 10px;
 }
@@ -583,7 +586,7 @@ header .publicidad {
     border-radius: 10px;
     border: solid 2px;
     overflow: hidden;
-    background-color: khaki;
+    background-color:rgb(116, 103, 103);;
     padding: 20px;
     margin: 20px;
     margin-bottom: 40px;
@@ -608,7 +611,7 @@ header .publicidad {
     border-radius: 10px;
     border: solid 2px;
     overflow: hidden;
-    background-color: khaki;
+    background-color: rgb(116, 103, 103);;
     padding: 10px;
     margin: 10px;
     margin-bottom: 40px;
@@ -649,7 +652,7 @@ header .publicidad {
   border: solid 2px;
   margin: 20px;
   padding: 10px;
-  background-color: khaki;
+  background-color:rgb(116, 103, 103);
 }
 .index .masVendido .masVendido1 > img {
   width: 100%;
@@ -680,7 +683,7 @@ header .publicidad {
     border: solid 2px;
     margin: 20px;
     padding: 10px;
-    background-color: khaki;
+    background-color: rgb(116, 103, 103);
   }
 }
 .index .masVendido .masVendido2 {
@@ -690,7 +693,7 @@ header .publicidad {
   border: solid 2px;
   margin: 20px;
   padding: 10px;
-  background-color: khaki;
+  background-color: rgb(116, 103, 103);
 }
 .index .masVendido .masVendido2 > img {
   width: 100%;
@@ -721,7 +724,7 @@ header .publicidad {
     border: solid 2px;
     margin: 20px;
     padding: 10px;
-    background-color: khaki;
+    background-color:rgb(116, 103, 103);
   }
 }
 .index .masVendido .masVendido3 {
@@ -731,7 +734,7 @@ header .publicidad {
   border: solid 2px;
   margin: 20px;
   padding: 10px;
-  background-color: khaki;
+  background-color: rgb(116, 103, 103);
 }
 .index .masVendido .masVendido3 > img {
   width: 100%;
@@ -762,7 +765,7 @@ header .publicidad {
     border: solid 2px;
     margin: 20px;
     padding: 10px;
-    background-color: khaki;
+    background-color:rgb(116, 103, 103);
   }
 }
 .index .masVendido .masVendido4 {
@@ -772,7 +775,7 @@ header .publicidad {
   border: solid 2px;
   margin: 20px;
   padding: 10px;
-  background-color: khaki;
+  background-color: rgb(116, 103, 103);
 }
 .index .masVendido .masVendido4 > img {
   width: 100%;
@@ -803,7 +806,7 @@ header .publicidad {
     border: solid 2px;
     margin: 20px;
     padding: 10px;
-    background-color: khaki;
+    background-color:rgb(116, 103, 103);
   }
 }
 @media (max-width: 1260px) {
@@ -937,6 +940,7 @@ header .publicidad {
   width: 110px;
   height: 30px;
   margin: 0px 20px 40px 125px;
+  background-color: rgba(92, 71, 2, 0.425);
 }
 .pagoYenvio .comprar:hover {
   transform: scale(1.1, 1.1);
@@ -958,7 +962,7 @@ main .taladro {
 }
 main .taladro > .imgTaladro {
   width: 400px;
-  border: solid 2px;
+  border: solid 4px;
   border-radius: 10px;
   margin: 30px;
 }
@@ -1001,7 +1005,7 @@ main .taladro .p1 {
   }
 }
 main .taladro input {
-  border: solid 1px;
+  border: solid 2px;
   height: 20px;
   padding: 5px;
 }
@@ -1034,7 +1038,8 @@ main .taladro button {
   width: 110px;
   height: 30px;
   border-radius: 5px;
-  background-color: rgba(202, 159, 18, 0.685);
+  background-color: rgba(0, 0, 0, 0.836);
+  color: white;
 }
 main .taladro button:hover {
   transform: scale(1.2, 1.2);
