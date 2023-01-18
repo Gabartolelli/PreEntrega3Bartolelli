@@ -1,3 +1,4 @@
+
 .index{
     display: grid;
     grid-area: main;
@@ -278,7 +279,7 @@
         margin-bottom: 150px;
         width:100%;
         .masVendido1{
-            @extend %tarjeta;
+            @extend %tarjetas;
             > img{
                 width: 100%;
                 height: 70%;
