@@ -10,7 +10,7 @@
   border: solid 2px;
   margin: 20px;
   padding: 10px;
-  background-color: rgb(116, 103, 103);
+  background-color: rgba(128, 128, 128, 0.363);
 }
 
 .datosComprador .formularioCompra input {
@@ -82,7 +82,7 @@ nav {
 }
 .navegadorBar .navegador .fa-bars {
   display: none;
-  color: white;
+  color: black;
 }
 @media (max-width: 970px) {
   .navegadorBar .navegador .fa-bars {
@@ -291,7 +291,7 @@ header .publicidad {
   width: 200px;
   padding: 30px;
   border-radius: 20px;
-  background-color: rgb(116, 103, 103);
+  background-color: rgba(128, 128, 128, 0.363);
 }
 .contacto .tarjetaContacto .formularioContacto .nombre, .contacto .tarjetaContacto .formularioContacto .apellido, .contacto .tarjetaContacto .formularioContacto .email, .contacto .tarjetaContacto .formularioContacto .mensaje {
   border: solid 1px;
@@ -325,7 +325,7 @@ header .publicidad {
   height: 30px;
   margin-right: 10px;
 }
-.contacto .tarjetaContacto .contactos .wsp p, .contacto .tarjetaContacto .contactos .fijo p, .contacto .tarjetaContacto .contactos .mail p {
+.contacto .tarjetaContacto .contactos p {
   font-weight: 300;
   color: white;
 }
@@ -340,6 +340,7 @@ header .publicidad {
 }
 .contacto .tarjetaContacto .encontranos > .direccion {
   margin-bottom: 10px;
+  color: white;
 }
 .contacto .tarjetaContacto .encontranos > .mapa {
   width: 100%;
@@ -391,7 +392,7 @@ header .publicidad {
   border-radius: 10px;
   border: solid 2px;
   overflow: hidden;
-  background-color: rgb(116, 103, 103);
+  background-color: rgba(128, 128, 128, 0.363);
   padding: 20px;
   margin: 20px;
   margin-bottom: 40px;
@@ -438,7 +439,7 @@ header .publicidad {
     border-radius: 10px;
     border: solid 2px;
     overflow: hidden;
-    background-color: rgb(116, 103, 103);
+    background-color: rgba(128, 128, 128, 0.363);
     padding: 20px;
     margin: 20px;
     margin-bottom: 40px;
@@ -451,7 +452,7 @@ header .publicidad {
     border-radius: 10px;
     border: solid 2px;
     overflow: hidden;
-    background-color: rgb(116, 103, 103);
+    background-color: rgba(128, 128, 128, 0.363);
     padding: 10px;
     margin: 10px;
     margin-bottom: 40px;
@@ -469,7 +470,7 @@ header .publicidad {
   border-radius: 10px;
   border: solid 2px;
   overflow: hidden;
-  background-color: rgb(116, 103, 103);
+  background-color: rgba(128, 128, 128, 0.363);
   padding: 20px;
   margin: 10px;
 }
@@ -523,7 +524,7 @@ header .publicidad {
     border-radius: 10px;
     border: solid 2px;
     overflow: hidden;
-    background-color: rgb(116, 103, 103);
+    background-color: rgba(128, 128, 128, 0.363);
     padding: 20px;
     margin: 20px;
     margin-bottom: 40px;
@@ -536,7 +537,7 @@ header .publicidad {
     border-radius: 10px;
     border: solid 2px;
     overflow: hidden;
-    background-color: rgb(116, 103, 103);
+    background-color: rgba(128, 128, 128, 0.363);
     padding: 20px;
     margin: 20px;
     margin-bottom: 40px;
@@ -549,7 +550,7 @@ header .publicidad {
     border-radius: 10px;
     border: solid 2px;
     overflow: hidden;
-    background-color: rgb(116, 103, 103);
+    background-color: rgba(128, 128, 128, 0.363);
     padding: 10px;
     margin: 10px;
     margin-bottom: 40px;
@@ -561,7 +562,7 @@ header .publicidad {
   border-radius: 10px;
   border: solid 2px;
   overflow: hidden;
-  background-color: rgb(116, 103, 103);
+  background-color: rgba(128, 128, 128, 0.363);
   padding: 20px;
   margin: 10px;
 }
@@ -621,7 +622,7 @@ header .publicidad {
     border-radius: 10px;
     border: solid 2px;
     overflow: hidden;
-    background-color: rgb(116, 103, 103);
+    background-color: rgba(128, 128, 128, 0.363);
     padding: 20px;
     margin: 20px;
     margin-bottom: 40px;
@@ -646,7 +647,7 @@ header .publicidad {
     border-radius: 10px;
     border: solid 2px;
     overflow: hidden;
-    background-color: rgb(116, 103, 103);
+    background-color: rgba(128, 128, 128, 0.363);
     padding: 10px;
     margin: 10px;
     margin-bottom: 40px;
@@ -710,7 +711,7 @@ header .publicidad {
     border: solid 2px;
     margin: 20px;
     padding: 10px;
-    background-color: rgb(116, 103, 103);
+    background-color: rgba(128, 128, 128, 0.363);
   }
 }
 .index .masVendido .masVendido2 > img {
@@ -743,7 +744,7 @@ header .publicidad {
     border: solid 2px;
     margin: 20px;
     padding: 10px;
-    background-color: rgb(116, 103, 103);
+    background-color: rgba(128, 128, 128, 0.363);
   }
 }
 .index .masVendido .masVendido3 > img {
@@ -776,7 +777,7 @@ header .publicidad {
     border: solid 2px;
     margin: 20px;
     padding: 10px;
-    background-color: rgb(116, 103, 103);
+    background-color: rgba(128, 128, 128, 0.363);
   }
 }
 .index .masVendido .masVendido4 > img {
@@ -809,7 +810,7 @@ header .publicidad {
     border: solid 2px;
     margin: 20px;
     padding: 10px;
-    background-color: rgb(116, 103, 103);
+    background-color: white;
   }
 }
 @media (max-width: 1260px) {
@@ -1269,7 +1270,7 @@ main .taladro > div > .p2 {
   display: flex;
   align-items: center;
   padding: 10px;
-  background-color: grey;
+  background-color: rgba(128, 128, 128, 0.363);
   margin-bottom: 0%;
   justify-content: space-around;
   height: auto;

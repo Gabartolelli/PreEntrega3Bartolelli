@@ -13,7 +13,7 @@ nav{
         text-align: center;
         .fa-bars{
             display: none;
-            color: white;
+            color: black;
             @media( max-width:970px){
                 display: block;
                 font-size: 40px;
@@ -33,7 +33,7 @@ nav{
             > li {
                 text-align: center;
                 margin: 0 10px 0 20px;
-                color: white;
+                color: $colorPrincipal;
                 font-size: medium;
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                 
@@ -76,7 +76,7 @@ nav{
             margin: 10px;
             justify-content: left;
             list-style-type: none;
-            color: white;
+            color: $colorPrincipal;
         }
         > div {
             display: flex;

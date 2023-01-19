@@ -26,7 +26,7 @@
              width: 200px;
              padding:30px;
              border-radius: 20px;
-             background-color: $colorPrincipal;
+             background-color: $backgroundcards;
              .nombre,.apellido,.email,.mensaje {
                  border: solid 1px;
                  margin: 10px;
@@ -52,16 +52,16 @@
                 margin: 10px;
                 padding: 5px;
              }
-             .wsp, .fijo, .mail{
-                 width: 30px;
-                 height: 30px;   
-                 margin-right: 10px;
-                 p{
-                    font-weight: 300;
-                    color: white;
-                 }
-                
-             }
+            .wsp, .fijo, .mail{
+                width: 30px;
+                height: 30px;   
+                margin-right: 10px;
+            }
+            p{
+                font-weight: 300;
+                color: $colorPrincipal
+            }
+            
              @media(max-width:432px){
                 width: 250px;
              }
@@ -72,6 +72,7 @@
              margin-bottom: 150px;
             > .direccion{
                 margin-bottom: 10px;
+                color: $colorPrincipal;
             }
             >.mapa{
                  width: 100%;

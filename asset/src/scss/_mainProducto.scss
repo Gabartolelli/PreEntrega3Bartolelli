@@ -55,7 +55,7 @@ main{
             margin-top: 20px;
             margin-bottom: 30px;
             font-size: 30px;
-            color: white;
+            color: $colorPrincipal;
             @media(max-width:600px){
                 font-size: 40px;
             }
@@ -80,7 +80,7 @@ main{
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             margin-bottom: 100px;
             height: 200px;
-            color: white;
+            color: $colorPrincipal;
             @media(max-width:750px){
                 font-size: 20px;
                 margin-bottom: 100px;
