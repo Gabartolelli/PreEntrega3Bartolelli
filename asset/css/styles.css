@@ -21,7 +21,7 @@
 }
 
 .bodyContacto {
-  background-image: url(../asset/img/fonfo.jpg);
+  background-image: url(../../../asset/img/fonfo.jpg);
   background-size: cover;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -30,7 +30,7 @@
 }
 
 .bodyIndex {
-  background-image: url(./asset/img/fonfo.jpg);
+  background-image: url(../../../asset/img/fonfo.jpg);
   background-size: cover;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -39,7 +39,7 @@
 }
 
 .bodyProducto {
-  background-image: url(../asset/img/fonfo.jpg);
+  background-image: url(../../../asset/img/fonfo.jpg);
   background-size: cover;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -48,7 +48,7 @@
 }
 
 .bodyCompra {
-  background-image: url(../asset/img/fonfo.jpg);
+  background-image: url(../../../asset/img/fonfo.jpg);
   background-size: cover;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -57,7 +57,7 @@
 }
 
 .bodyPreguntas {
-  background-image: url(../asset/img/fonfo.jpg);
+  background-image: url(../../../asset/img/fonfo.jpg);
   background-size: cover;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
