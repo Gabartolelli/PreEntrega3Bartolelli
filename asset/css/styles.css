@@ -2,13 +2,27 @@
   padding: 0;
   margin: 0;
 }
-body{
-  background-image: url(/asset/img/fonfo.jpg);
-  background-size: cover;
+
+.index .masVendido .masVendido4, .index .masVendido .masVendido3, .index .masVendido .masVendido2, .index .masVendido .masVendido1 {
+  width: 250px;
+  height: 300px;
+  border-radius: 10px;
+  border: solid 2px;
+  margin: 20px;
+  padding: 10px;
+  background-color: rgb(116, 103, 103);
 }
 
+.datosComprador .formularioCompra input {
+  margin: 10px;
+  border: solid 2px;
+  padding: 5px;
+  width: 85%;
+}
 
 .bodyContacto {
+  background-image: url(/asset/img/fonfo.jpg);
+  background-size: cover;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto auto auto;
@@ -16,6 +30,8 @@ body{
 }
 
 .bodyIndex {
+  background-image: url(/asset/img/fonfo.jpg);
+  background-size: cover;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto auto auto auto;
@@ -23,6 +39,8 @@ body{
 }
 
 .bodyProducto {
+  background-image: url(/asset/img/fonfo.jpg);
+  background-size: cover;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto auto auto;
@@ -30,6 +48,8 @@ body{
 }
 
 .bodyCompra {
+  background-image: url(/asset/img/fonfo.jpg);
+  background-size: cover;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto auto auto;
@@ -37,10 +57,16 @@ body{
 }
 
 .bodyPreguntas {
+  background-image: url(/asset/img/fonfo.jpg);
+  background-size: cover;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto auto auto;
   grid-template-areas: "nav    nav    nav    nav" "main   main   main   main" "footer footer footer footer";
+}
+
+nav {
+  grid-area: nav;
 }
 
 .navegadorBar {
@@ -48,7 +74,6 @@ body{
 }
 .navegadorBar .navegador {
   position: relative;
-  background-color: rgb(80, 77, 77);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -57,6 +82,7 @@ body{
 }
 .navegadorBar .navegador .fa-bars {
   display: none;
+  color: white;
 }
 @media (max-width: 970px) {
   .navegadorBar .navegador .fa-bars {
@@ -81,7 +107,7 @@ body{
 .navegadorBar .navegador > ul > li {
   text-align: center;
   margin: 0 10px 0 20px;
-  color: black;
+  color: white;
   font-size: medium;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
@@ -102,7 +128,7 @@ body{
     height: 100vh;
     top: 0;
     left: -350px;
-    background-color: rgb(80, 77, 77);
+    background-color: rgba(80, 77, 77, 0.753);
     z-index: 100;
     transition: 0.5s;
   }
@@ -117,7 +143,7 @@ body{
     flex-direction: column;
     width: 250px;
     height: 100vh;
-    
+    background-color: rgba(80, 77, 77, 0.753);
   }
 }
 .navegadorBar .navegador > a > .logo {
@@ -127,6 +153,7 @@ body{
   margin: 10px;
   justify-content: left;
   list-style-type: none;
+  color: white;
 }
 .navegadorBar .navegador > div {
   display: flex;
@@ -264,7 +291,7 @@ header .publicidad {
   width: 200px;
   padding: 30px;
   border-radius: 20px;
-  background-color: rgba(116, 103, 103, 0.274);
+  background-color: rgb(116, 103, 103);
 }
 .contacto .tarjetaContacto .formularioContacto .nombre, .contacto .tarjetaContacto .formularioContacto .apellido, .contacto .tarjetaContacto .formularioContacto .email, .contacto .tarjetaContacto .formularioContacto .mensaje {
   border: solid 1px;
@@ -293,19 +320,19 @@ header .publicidad {
   margin: 10px;
   padding: 5px;
 }
-.contacto .tarjetaContacto .contactos > div p{
-  color: white;
-  font-size: 300;
-}
 .contacto .tarjetaContacto .contactos .wsp, .contacto .tarjetaContacto .contactos .fijo, .contacto .tarjetaContacto .contactos .mail {
   width: 30px;
   height: 30px;
   margin-right: 10px;
 }
+.contacto .tarjetaContacto .contactos .wsp p, .contacto .tarjetaContacto .contactos .fijo p, .contacto .tarjetaContacto .contactos .mail p {
+  font-weight: 300;
+  color: white;
+}
 @media (max-width: 432px) {
   .contacto .tarjetaContacto .contactos {
     width: 250px;
-}
+  }
 }
 .contacto .tarjetaContacto .encontranos {
   width: 300px;
@@ -313,8 +340,6 @@ header .publicidad {
 }
 .contacto .tarjetaContacto .encontranos > .direccion {
   margin-bottom: 10px;
-  color: white;
-  font-weight: 400;
 }
 .contacto .tarjetaContacto .encontranos > .mapa {
   width: 100%;
@@ -404,6 +429,7 @@ header .publicidad {
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.171);
   margin: 10px;
+  color: white;
 }
 @media (max-width: 759px) {
   .index .cards .card {
@@ -412,7 +438,7 @@ header .publicidad {
     border-radius: 10px;
     border: solid 2px;
     overflow: hidden;
-    background-color: rgb(116, 103, 103);;
+    background-color: rgb(116, 103, 103);
     padding: 20px;
     margin: 20px;
     margin-bottom: 40px;
@@ -443,7 +469,7 @@ header .publicidad {
   border-radius: 10px;
   border: solid 2px;
   overflow: hidden;
-  background-color: rgb(116, 103, 103);;
+  background-color: rgb(116, 103, 103);
   padding: 20px;
   margin: 10px;
 }
@@ -488,6 +514,7 @@ header .publicidad {
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.171);
   margin: 10px;
+  color: white;
 }
 @media (max-width: 1087px) {
   .index .cards .card12 .card2 {
@@ -496,7 +523,7 @@ header .publicidad {
     border-radius: 10px;
     border: solid 2px;
     overflow: hidden;
-    background-color: rgb(116, 103, 103);;
+    background-color: rgb(116, 103, 103);
     padding: 20px;
     margin: 20px;
     margin-bottom: 40px;
@@ -509,7 +536,7 @@ header .publicidad {
     border-radius: 10px;
     border: solid 2px;
     overflow: hidden;
-    background-color: rgb(116, 103, 103);;
+    background-color: rgb(116, 103, 103);
     padding: 20px;
     margin: 20px;
     margin-bottom: 40px;
@@ -522,7 +549,7 @@ header .publicidad {
     border-radius: 10px;
     border: solid 2px;
     overflow: hidden;
-    background-color:rgb(116, 103, 103);;
+    background-color: rgb(116, 103, 103);
     padding: 10px;
     margin: 10px;
     margin-bottom: 40px;
@@ -534,7 +561,7 @@ header .publicidad {
   border-radius: 10px;
   border: solid 2px;
   overflow: hidden;
-  background-color: rgb(116, 103, 103);;
+  background-color: rgb(116, 103, 103);
   padding: 20px;
   margin: 10px;
 }
@@ -585,6 +612,7 @@ header .publicidad {
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.171);
   margin: 10px;
+  color: white;
 }
 @media (max-width: 1087px) {
   .index .cards .card12 .card3 {
@@ -593,7 +621,7 @@ header .publicidad {
     border-radius: 10px;
     border: solid 2px;
     overflow: hidden;
-    background-color:rgb(116, 103, 103);;
+    background-color: rgb(116, 103, 103);
     padding: 20px;
     margin: 20px;
     margin-bottom: 40px;
@@ -618,7 +646,7 @@ header .publicidad {
     border-radius: 10px;
     border: solid 2px;
     overflow: hidden;
-    background-color: rgb(116, 103, 103);;
+    background-color: rgb(116, 103, 103);
     padding: 10px;
     margin: 10px;
     margin-bottom: 40px;
@@ -652,15 +680,6 @@ header .publicidad {
   margin-bottom: 150px;
   width: 100%;
 }
-.index .masVendido .masVendido1 {
-  width: 250px;
-  height: 300px;
-  border-radius: 10px;
-  border: solid 2px;
-  margin: 20px;
-  padding: 10px;
-  background-color:rgb(116, 103, 103);
-}
 .index .masVendido .masVendido1 > img {
   width: 100%;
   height: 70%;
@@ -681,6 +700,7 @@ header .publicidad {
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.171);
   margin: 10px;
+  color: white;
 }
 @media (max-width: 550px) {
   .index .masVendido .masVendido1 {
@@ -692,15 +712,6 @@ header .publicidad {
     padding: 10px;
     background-color: rgb(116, 103, 103);
   }
-}
-.index .masVendido .masVendido2 {
-  width: 250px;
-  height: 300px;
-  border-radius: 10px;
-  border: solid 2px;
-  margin: 20px;
-  padding: 10px;
-  background-color: rgb(116, 103, 103);
 }
 .index .masVendido .masVendido2 > img {
   width: 100%;
@@ -722,6 +733,7 @@ header .publicidad {
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.171);
   margin: 10px;
+  color: white;
 }
 @media (max-width: 550px) {
   .index .masVendido .masVendido2 {
@@ -731,17 +743,8 @@ header .publicidad {
     border: solid 2px;
     margin: 20px;
     padding: 10px;
-    background-color:rgb(116, 103, 103);
+    background-color: rgb(116, 103, 103);
   }
-}
-.index .masVendido .masVendido3 {
-  width: 250px;
-  height: 300px;
-  border-radius: 10px;
-  border: solid 2px;
-  margin: 20px;
-  padding: 10px;
-  background-color: rgb(116, 103, 103);
 }
 .index .masVendido .masVendido3 > img {
   width: 100%;
@@ -763,6 +766,7 @@ header .publicidad {
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.171);
   margin: 10px;
+  color: white;
 }
 @media (max-width: 550px) {
   .index .masVendido .masVendido3 {
@@ -772,17 +776,8 @@ header .publicidad {
     border: solid 2px;
     margin: 20px;
     padding: 10px;
-    background-color:rgb(116, 103, 103);
+    background-color: rgb(116, 103, 103);
   }
-}
-.index .masVendido .masVendido4 {
-  width: 250px;
-  height: 300px;
-  border-radius: 10px;
-  border: solid 2px;
-  margin: 20px;
-  padding: 10px;
-  background-color: rgb(116, 103, 103);
 }
 .index .masVendido .masVendido4 > img {
   width: 100%;
@@ -804,6 +799,7 @@ header .publicidad {
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.171);
   margin: 10px;
+  color: white;
 }
 @media (max-width: 550px) {
   .index .masVendido .masVendido4 {
@@ -813,7 +809,7 @@ header .publicidad {
     border: solid 2px;
     margin: 20px;
     padding: 10px;
-    background-color:rgb(116, 103, 103);
+    background-color: rgb(116, 103, 103);
   }
 }
 @media (max-width: 1260px) {
@@ -843,14 +839,14 @@ header .publicidad {
   flex-direction: column;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-.datosComprador .formularioCompra input {
-  border: solid 1px;
-  margin: 10px;
-  border: solid 2px;
-  padding: 5px;
+.datosComprador .formularioCompra h2 {
+  color: white;
 }
 .datosComprador .formularioCompra input:hover {
   transform: scale(1.1, 1.1);
+}
+.datosComprador .formularioCompra input p {
+  color: white;
 }
 @media (max-width: 882px) {
   .datosComprador .formularioCompra {
@@ -875,6 +871,7 @@ header .publicidad {
 .datosComprador .imagenCompra p {
   font-size: 20px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
 }
 @media (max-width: 882px) {
   .datosComprador .imagenCompra {
@@ -901,6 +898,9 @@ header .publicidad {
   flex-direction: column;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
+.pagoYenvio .pagos h2 {
+  color: white;
+}
 .pagoYenvio .pagos > input {
   margin: 10px;
   border: solid 2px;
@@ -909,6 +909,9 @@ header .publicidad {
 }
 .pagoYenvio .pagos > input:hover {
   transform: scale(1.1, 1.1);
+}
+.pagoYenvio .pagos > label {
+  color: white;
 }
 .pagoYenvio .pagos > label > input {
   margin: 10px;
@@ -925,12 +928,18 @@ header .publicidad {
   flex-direction: column;
   width: 50%;
   height: auto;
-  background-color:rgba(116, 103, 103, 0.274);
+  background-color: rgba(116, 103, 103, 0.274);
   border-radius: 10px;
   border: solid 2px;
   padding: 10px;
   margin: 10px 20px 50px 125px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.pagoYenvio .envios h2 {
+  color: white;
+}
+.pagoYenvio .envios > label {
+  color: white;
 }
 .pagoYenvio .envios > label > input {
   margin: 10px;
@@ -944,10 +953,160 @@ header .publicidad {
 .pagoYenvio .comprar {
   border: solid 2px;
   border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.171);
+  color: white;
   width: 110px;
   height: 30px;
-  margin: 0px 20px 40px 125px;
+  margin: 0 20px 40px 125px;
+  padding: 0;
+}
+.pagoYenvio .comprar:hover {
+  transform: scale(1.1, 1.1);
+}
+@media (max-width: 882px) {
+  .pagoYenvio .comprar {
+    margin-left: 80px;
+  }
+}
+
+.datosComprador {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.datosComprador .formularioCompra {
+  width: 50%;
+  height: auto;
+  margin-left: 125px;
+  margin-bottom: 10px;
   background-color: rgba(116, 103, 103, 0.274);
+  border-radius: 10px;
+  border: solid 2px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.datosComprador .formularioCompra h2 {
+  color: white;
+}
+.datosComprador .formularioCompra input:hover {
+  transform: scale(1.1, 1.1);
+}
+.datosComprador .formularioCompra input p {
+  color: white;
+}
+@media (max-width: 882px) {
+  .datosComprador .formularioCompra {
+    margin-left: 80px;
+  }
+}
+.datosComprador .imagenCompra {
+  order: 1;
+  margin: 0 50px 20px 250px;
+  width: 80%;
+}
+.datosComprador .imagenCompra img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  border: solid 2px;
+  margin-top: 35px;
+}
+.datosComprador .imagenCompra img:hover {
+  transform: scale(1.1, 1.1);
+}
+.datosComprador .imagenCompra p {
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+}
+@media (max-width: 882px) {
+  .datosComprador .imagenCompra {
+    margin-left: 80px;
+  }
+}
+
+.pagoYenvio {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 100%;
+  height: auto;
+}
+.pagoYenvio .pagos {
+  width: 50%;
+  height: auto;
+  margin-left: 125px;
+  background-color: rgba(116, 103, 103, 0.274);
+  border-radius: 10px;
+  border: solid 2px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.pagoYenvio .pagos h2 {
+  color: white;
+}
+.pagoYenvio .pagos > input {
+  margin: 10px;
+  border: solid 2px;
+  width: 85%;
+  padding: 5px;
+}
+.pagoYenvio .pagos > input:hover {
+  transform: scale(1.1, 1.1);
+}
+.pagoYenvio .pagos > label {
+  color: white;
+}
+.pagoYenvio .pagos > label > input {
+  margin: 10px;
+  border: solid 2px;
+}
+@media (max-width: 882px) {
+  .pagoYenvio .pagos {
+    width: 50%;
+    margin-left: 80px;
+  }
+}
+.pagoYenvio .envios {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: auto;
+  background-color: rgba(116, 103, 103, 0.274);
+  border-radius: 10px;
+  border: solid 2px;
+  padding: 10px;
+  margin: 10px 20px 50px 125px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.pagoYenvio .envios h2 {
+  color: white;
+}
+.pagoYenvio .envios > label {
+  color: white;
+}
+.pagoYenvio .envios > label > input {
+  margin: 10px;
+}
+@media (max-width: 882px) {
+  .pagoYenvio .envios {
+    width: 50%;
+    margin-left: 80px;
+  }
+}
+.pagoYenvio .comprar {
+  border: solid 2px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.171);
+  color: white;
+  width: 110px;
+  height: 30px;
+  margin: 0 20px 40px 125px;
+  padding: 0;
 }
 .pagoYenvio .comprar:hover {
   transform: scale(1.1, 1.1);
@@ -969,11 +1128,10 @@ main .taladro {
 }
 main .taladro > .imgTaladro {
   width: 400px;
-  border: solid 4px;
+  border: solid 2px;
   border-radius: 10px;
   margin: 30px;
 }
-
 @media (max-width: 600px) {
   main .taladro > .imgTaladro {
     width: 350px;
@@ -1010,7 +1168,7 @@ main .taladro .p1 {
   }
 }
 main .taladro input {
-  border: solid 2px;
+  border: solid 1px;
   height: 20px;
   padding: 5px;
 }
@@ -1043,9 +1201,10 @@ main .taladro h3 {
 main .taladro button {
   width: 110px;
   height: 30px;
+  margin: 0;
+  padding: 0;
   border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.836);
-  color: white;
+  background-color: rgba(0, 0, 0, 0.171);
 }
 main .taladro button:hover {
   transform: scale(1.2, 1.2);
@@ -1081,6 +1240,7 @@ main .taladro > div > .p2 {
 }
 .preguntasFrecuentes > h1 {
   margin: 20px;
+  color: white;
 }
 .preguntasFrecuentes .preguntas {
   margin: 20px;
@@ -1091,17 +1251,17 @@ main .taladro > div > .p2 {
   display: flex;
   flex-direction: column;
 }
-.preguntasFrecuentes .pregunta li h3{
+.preguntasFrecuentes .preguntas h3 {
   font-weight: 300;
   color: white;
 }
+
 .preguntasFrecuentes ul p {
   padding: 10px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 300;
-    color: white;
+  color: white;
 }
-
 
 .pie {
   display: grid;
@@ -1150,9 +1310,4 @@ main .taladro > div > .p2 {
     height: auto;
     margin-bottom: 0%;
   }
-}
-
-/* preguntas frecuentes*/
-nav {
-  grid-area: nav;
 }
