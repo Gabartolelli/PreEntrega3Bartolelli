@@ -707,7 +707,7 @@ header .publicidad {
   font-size: 15px;
   color: white;
 }
-.index .masVendido .masVendido1 .boton {
+.index .masVendido .masVendido1 a button {
   padding: 5px;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.171);
@@ -741,7 +741,7 @@ header .publicidad {
   font-size: 15px;
   color: white;
 }
-.index .masVendido .masVendido2 .boton {
+.index .masVendido .masVendido2 a button {
   padding: 5px;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.171);
@@ -775,7 +775,7 @@ header .publicidad {
   font-size: 15px;
   color: white;
 }
-.index .masVendido .masVendido3 .boton {
+.index .masVendido .masVendido3 a button {
   padding: 5px;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.171);
@@ -809,7 +809,7 @@ header .publicidad {
   font-size: 15px;
   color: white;
 }
-.index .masVendido .masVendido4 .boton {
+.index .masVendido .masVendido4 a button {
   padding: 5px;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.171);
