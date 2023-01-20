@@ -1232,7 +1232,7 @@ main .taladro > div > .p2 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin-bottom: 100px;
   height: 200px;
-  line-height: 2;
+  line-height: 1.5;
   color: white;
 }
 @media (max-width: 750px) {
