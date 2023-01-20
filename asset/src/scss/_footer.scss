@@ -17,6 +17,7 @@
     .seguinos{
         font-size: medium;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: $colorsecundario;
         @media(max-width:759px){
             font-size: 18px;
         }
@@ -26,7 +27,7 @@
         font-size: 16px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         text-decoration: none;
-        color: black;
+        color:$colorsecundario;
         @media(max-width:759px){
             margin-left: 0px;
         }

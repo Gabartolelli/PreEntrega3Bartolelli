@@ -82,7 +82,7 @@ nav {
 }
 .navegadorBar .navegador .fa-bars {
   display: none;
-  color: black;
+  color: rgb(173, 192, 235);
 }
 @media (max-width: 970px) {
   .navegadorBar .navegador .fa-bars {
@@ -268,6 +268,7 @@ header .publicidad {
   font-size: 30px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin: 20px;
+  color: rgb(173, 192, 235);
 }
 @media (max-width: 1207px) {
   .contacto .tituloContacto {

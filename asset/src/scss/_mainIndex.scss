@@ -8,6 +8,7 @@
         text-align: center;
         font-size: 40px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color:$colorsecundario;
         @media(max-width:550px){
            
             text-align: center;
@@ -275,6 +276,7 @@
         padding: 20px;
         margin: 40px;
         text-align: center;
+        color: $colorsecundario;
         
     }
     .masVendido{
@@ -296,6 +298,7 @@
             > p{
                 margin-bottom: 20px;
                 font-size: 15px;
+                color: $colorPrincipal;
             }
             .boton{
                 padding: 5px;
@@ -329,6 +332,7 @@
             > p{
                 margin-bottom: 20px;
                 font-size: 15px;
+                color: $colorPrincipal;
             }
             .boton{
                 padding: 5px;
@@ -362,6 +366,7 @@
             > p{
                 margin-bottom: 20px;
                 font-size: 15px;
+                color: $colorPrincipal;
             }
             .boton{
                 padding: 5px;
@@ -395,6 +400,7 @@
             > p{
                 margin-bottom: 20px;
                 font-size: 15px;
+                color: $colorPrincipal;
             }
             .boton{
                 padding: 5px;
@@ -411,7 +417,7 @@
                 border: solid 2px;
                 margin: 20px;
                 padding: 10px;
-                background-color: $colorPrincipal;
+                background-color: $backgroundcards;
             }
         }
         @media(max-width:1260px){
