@@ -24,7 +24,7 @@ main{
              font-size: 30px;
              width: 500px;
              font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-             color: white;
+             color: $colorPrincipal;
              @media(max-width:750px){
                 width: auto;
              }
@@ -75,6 +75,7 @@ main{
         }
         > div >.p2{
             font-size: larger 15px;
+            font-weight: 300;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             margin-bottom: 100px;
             height: 200px;
