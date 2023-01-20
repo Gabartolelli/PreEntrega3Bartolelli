@@ -59,7 +59,7 @@
                 border-radius: 10px;
                 background-color: rgba(0, 0, 0, 0.171);
                 margin: 10px;
-                color: $colorPrincipal;
+                color: white;
             }
             @media(max-width:759px){
                 width: 350px;
@@ -130,14 +130,12 @@
                         font-size: 12px;
                     }
                 }
-                .boton{
+                a button{
                     padding: 5px;
                     border-radius: 10px;
                     background-color: rgba(0, 0, 0, 0.171);
                     margin: 10px;
-                    color: $colorPrincipal;
-                    
-                        
+                    color: white;
                 }
                 @media(max-width:1087px){
                     width: 500px;
@@ -217,13 +215,12 @@
                         font-size: 12px;
                     }
                 }
-                .boton{
+                a button{
                     padding: 5px;
                     border-radius: 10px;
                     background-color: rgba(0, 0, 0, 0.171);
                     margin: 10px;
-                    color: $colorPrincipal;
-                        
+                    color: white;
                 }
                 @media(max-width:1087px){
                     width: 500px;

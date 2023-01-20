@@ -518,7 +518,7 @@ header .publicidad {
     font-size: 12px;
   }
 }
-.index .cards .card12 .card2 .boton {
+.index .cards .card12 .card2 a button {
   padding: 5px;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.171);
@@ -617,7 +617,7 @@ header .publicidad {
     font-size: 12px;
   }
 }
-.index .cards .card12 .card3 .boton {
+.index .cards .card12 .card3 a button {
   padding: 5px;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.171);
@@ -1229,7 +1229,6 @@ main .taladro button:hover {
 }
 main .taladro > div > .p2 {
   font-size: larger 15px;
-  font-weight: 300;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin-bottom: 100px;
   height: 200px;
