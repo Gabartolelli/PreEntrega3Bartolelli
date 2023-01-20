@@ -82,7 +82,7 @@ nav {
 }
 .navegadorBar .navegador .fa-bars {
   display: none;
-  color: rgb(173, 192, 235);
+  color: white;
 }
 @media (max-width: 970px) {
   .navegadorBar .navegador .fa-bars {
@@ -110,6 +110,10 @@ nav {
   color: white;
   font-size: medium;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.navegadorBar .navegador > ul > li a {
+  text-decoration: none;
+  color: white;
 }
 @media (max-width: 970px) {
   .navegadorBar .navegador > ul > li {
@@ -374,6 +378,7 @@ header .publicidad {
   text-align: center;
   font-size: 40px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(173, 192, 235);
 }
 @media (max-width: 550px) {
   .index .ofertas {
@@ -420,6 +425,7 @@ header .publicidad {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   padding: 5px;
   margin-bottom: 5px;
+  color: white;
 }
 @media (max-width: 550px) {
   .index .cards .card .descripcion1 {
@@ -505,6 +511,7 @@ header .publicidad {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   padding: 5px;
   margin-bottom: 5px;
+  color: white;
 }
 @media (max-width: 550px) {
   .index .cards .card12 .card2 .descripcion {
@@ -597,6 +604,7 @@ header .publicidad {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   padding: 5px;
   margin-bottom: 5px;
+  color: white;
 }
 @media (max-width: 1087px) {
   .index .cards .card12 .card3 .descripcion {
@@ -675,6 +683,7 @@ header .publicidad {
   padding: 20px;
   margin: 40px;
   text-align: center;
+  color: rgb(173, 192, 235);
 }
 .index .masVendido {
   display: flex;
@@ -696,6 +705,7 @@ header .publicidad {
 .index .masVendido .masVendido1 > p {
   margin-bottom: 20px;
   font-size: 15px;
+  color: white;
 }
 .index .masVendido .masVendido1 .boton {
   padding: 5px;
@@ -729,6 +739,7 @@ header .publicidad {
 .index .masVendido .masVendido2 > p {
   margin-bottom: 20px;
   font-size: 15px;
+  color: white;
 }
 .index .masVendido .masVendido2 .boton {
   padding: 5px;
@@ -762,6 +773,7 @@ header .publicidad {
 .index .masVendido .masVendido3 > p {
   margin-bottom: 20px;
   font-size: 15px;
+  color: white;
 }
 .index .masVendido .masVendido3 .boton {
   padding: 5px;
@@ -795,6 +807,7 @@ header .publicidad {
 .index .masVendido .masVendido4 > p {
   margin-bottom: 20px;
   font-size: 15px;
+  color: white;
 }
 .index .masVendido .masVendido4 .boton {
   padding: 5px;
@@ -811,7 +824,7 @@ header .publicidad {
     border: solid 2px;
     margin: 20px;
     padding: 10px;
-    background-color: white;
+    background-color: rgba(128, 128, 128, 0.363);
   }
 }
 @media (max-width: 1260px) {
@@ -1174,10 +1187,6 @@ main .taladro input {
   height: 20px;
   padding: 5px;
 }
-main .taladro input:hover {
-  transform: scale(1.1, 1.1);
-  margin-left: 20px;
-}
 @media (max-width: 600px) {
   main .taladro input {
     width: 250px;
@@ -1207,6 +1216,7 @@ main .taladro button {
   padding: 0;
   border-radius: 5px;
   background-color: rgba(0, 0, 0, 0.171);
+  color: white;
 }
 main .taladro button:hover {
   transform: scale(1.2, 1.2);
@@ -1285,6 +1295,7 @@ main .taladro > div > .p2 {
 .pie .seguinos {
   font-size: medium;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(173, 192, 235);
 }
 @media (max-width: 759px) {
   .pie .seguinos {
@@ -1296,7 +1307,7 @@ main .taladro > div > .p2 {
   font-size: 16px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-decoration: none;
-  color: black;
+  color: rgb(173, 192, 235);
 }
 @media (max-width: 759px) {
   .pie .preg {

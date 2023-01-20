@@ -13,7 +13,7 @@ nav{
         text-align: center;
         .fa-bars{
             display: none;
-            color:$colorPrimario;
+            color:$colorPrincipal;
             @media( max-width:970px){
                 display: block;
                 font-size: 40px;
@@ -36,7 +36,10 @@ nav{
                 color: $colorPrincipal;
                 font-size: medium;
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                
+                a{
+                    text-decoration: none;
+                    color: $colorPrincipal;
+                }
                 @media( max-width:970px){
                     margin: 20px 0px;
                     > li:nth-child(1){
